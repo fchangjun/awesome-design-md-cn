@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>awesome-design-md-cn</title>
+  <meta name="description" content="面向中文用户的 DESIGN.md 设计系统导航站，支持中文搜索、分类筛选、详情页和原始预览。">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="page-home">
+  <main class="page-shell">
+    <header class="topbar">
+      <div class="brand-lockup">
+        <div class="brand-name">awesome-design-md-cn</div>
+        <div class="brand-sub">中文 DESIGN.md 导航站</div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="guide.html">使用指南</a>
+      </nav>
+    </header>
+
+    <section class="hero-shell">
+      <div class="eyebrow">Design Systems Library</div>
+      <div class="hero-grid hero-grid-single">
+        <div class="hero-copy hero-copy-compact">
+          <div class="hero-copy-block">
+            <h1 class="hero-title">先选风格，再写界面。</h1>
+            <p class="hero-subtitle">把 DESIGN.md 当成风格索引来用。先浏览，再决定引用哪一份。</p>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#browse">开始浏览</a>
+            <a class="button button-secondary" href="guide.html">使用指南</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section browse-layout-section" id="browse">
+      <div class="browse-layout">
+        <aside class="browse-sidebar">
+          <div class="browse-tools">
+            <div class="browse-head">
+              <div>
+                <p class="panel-label">Browse</p>
+                <h2 class="browse-title">筛选风格</h2>
+                <p class="browse-copy">先缩小范围，再进入详情页查看对应的 DESIGN.md。</p>
+              </div>
+            </div>
+            <div class="browse-meta">
+              <span><strong id="hero-count">0</strong><em>系统</em></span>
+              <span><strong id="category-count">0</strong><em>分类</em></span>
+              <span><strong id="scenario-count">0</strong><em>场景</em></span>
+            </div>
+            <div class="sidebar-actions">
+              <button class="button button-ghost" type="button" id="clear-filters">清空筛选</button>
+              <a class="button button-secondary" href="guide.html">怎么使用</a>
+            </div>
+            <div class="filter-stack">
+              <div class="filter-block browse-search">
+                <p class="panel-label">搜索</p>
+                <input id="search-input" class="search-input" type="search" placeholder="搜品牌名、中文名、行业、场景">
+              </div>
+              <div class="filter-block">
+                <p class="panel-label">分类</p>
+                <div class="chips" id="category-chips"></div>
+              </div>
+              <div class="filter-block">
+                <p class="panel-label">推荐场景</p>
+                <div class="chips" id="scenario-chips"></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <div class="browse-content">
+          <section class="section section-tight content-panel content-panel-featured">
+            <div class="section-head">
+              <div>
+                <h2 class="section-title">推荐起点</h2>
+                <p class="section-copy">如果还没有明确方向，先从这几套风格开始看。</p>
+              </div>
+            </div>
+            <div class="featured-grid" id="featured-grid"></div>
+          </section>
+
+          <section class="section section-tight content-panel content-panel-library">
+            <div class="section-head library-head">
+              <div>
+                <h2 class="section-title">设计系统库</h2>
+                <p class="section-copy" id="result-count">正在载入数据</p>
+              </div>
+              <p class="library-note">适合直接横向比较风格，再进入详情页看完整说明和预览。</p>
+            </div>
+            <div class="card-grid" id="card-grid"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">
+      原始内容来源于 `awesome-design-md`。当前版本重点解决中文用户的筛选、理解和使用门槛，不直接改写原始设计资产。
+      致敬原项目：
+      <a href="https://github.com/HU-UH/awesome-design-md" target="_blank" rel="noreferrer">HU-UH/awesome-design-md</a>
+    </p>
+  </main>
+  <script src="data/designs.js"></script>
+  <script src="assets/site.js"></script>
+  <script src="assets/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用指南 · awesome-design-md-cn</title>
+  <meta name="description" content="awesome-design-md-cn 使用指南，帮助中文用户理解和使用 DESIGN.md。">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="page-guide">
+  <main class="page-shell">
+    <header class="topbar">
+      <div class="brand-lockup">
+        <div class="brand-name">awesome-design-md-cn</div>
+        <div class="brand-sub">中文 DESIGN.md 导航站</div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="guide.html">使用指南</a>
+      </nav>
+    </header>
+
+    <section class="hero-shell guide-hero">
+      <div class="eyebrow">Guide</div>
+      <div class="hero-grid">
+        <div class="stack">
+          <div>
+            <h1 class="hero-title">别先模仿品牌。先判断这套设计语言适不适合你的页面。</h1>
+            <p class="hero-subtitle">
+              `DESIGN.md` 的作用，是把颜色、字体、组件和留白节奏变成 AI 能稳定执行的约束。用得对，它能帮你快速对齐风格；用得不对，只会做出一堆“像某品牌但不好用”的页面。
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="index.html">回到首页选风格</a>
+          </div>
+          <div class="guide-hero-points">
+            <span>先选页面类型</span>
+            <span>再看预览</span>
+            <span>最后组织提示词</span>
+          </div>
+        </div>
+
+        <div class="guide-summary">
+          <article class="guide-summary-card">
+            <strong>这页回答三个问题</strong>
+            <p>什么是 DESIGN.md、应该怎么选风格、怎么把它变成适合中文产品的提示词。</p>
+          </article>
+          <div class="guide-summary-grid">
+            <article class="guide-step">
+              <span class="step-no">1</span>
+              <h3 class="card-title">先按页面类型选</h3>
+              <p class="muted">官网、后台、文档站、营销页分开判断。</p>
+            </article>
+            <article class="guide-step">
+              <span class="step-no">2</span>
+              <h3 class="card-title">先看预览再使用</h3>
+              <p class="muted">先确认标题密度、按钮气质和组件节奏。</p>
+            </article>
+            <article class="guide-step">
+              <span class="step-no">3</span>
+              <h3 class="card-title">把中文约束写清楚</h3>
+              <p class="muted">明确标题长度、信息密度和文案语气。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="resource-grid">
+        <article class="panel">
+          <h2 class="section-title">DESIGN.md 是什么</h2>
+          <p class="section-copy">它是给 AI 理解设计系统的一份文本协议，不是组件库，也不是视觉稿。它的重点是把视觉规则和界面气质说清楚。</p>
+        </article>
+        <article class="panel">
+          <h2 class="section-title">它不是什么</h2>
+          <p class="section-copy">它不能替代业务判断、交互流程设计和信息架构设计。如果这些没想清楚，再好的设计系统也救不了页面。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">推荐流程</h2>
+          <p class="section-copy">按这个顺序走，输出会稳定很多。</p>
+        </div>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-step">
+          <span class="step-no">1</span>
+          <h3 class="card-title">先选风格范围</h3>
+          <p class="muted">开发工具优先看 Vercel、Cursor、Warp。金融科技优先看 Stripe、Wise、Revolut。协作工具优先看 Notion、Linear、Miro。</p>
+        </article>
+        <article class="guide-step">
+          <span class="step-no">2</span>
+          <h3 class="card-title">再看是否适合中文</h3>
+          <p class="muted">重点看长标题是否能承受、模块是否太碎、正文行高是否足够、按钮文案会不会溢出。</p>
+        </article>
+        <article class="guide-step">
+          <span class="step-no">3</span>
+          <h3 class="card-title">最后组织提示词</h3>
+          <p class="muted">写清楚页面类型、目标用户、中文文案密度和希望保留的视觉特征，不要只说“做成某品牌风格”。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">可直接使用的提示词框架</h2>
+          <p class="section-copy">把里面的品牌和页面类型替换掉就能直接用。</p>
+        </div>
+      </div>
+      <article class="panel">
+        <div class="prompt-box">
+          <code>参考 DESIGN.md 中定义的设计语言，为我生成一个中文产品页面。保留这套风格的配色角色、字重层级、按钮和卡片样式、留白节奏，同时把标题长度、正文排版、信息密度和表单尺寸调整为适合中文阅读的形式。页面类型是：________。目标用户是：________。重点强调：________。</code>
+        </div>
+        <div class="prompt-actions" style="margin-top: 14px;">
+          <button class="button button-primary" type="button" data-copy="参考 DESIGN.md 中定义的设计语言，为我生成一个中文产品页面。保留这套风格的配色角色、字重层级、按钮和卡片样式、留白节奏，同时把标题长度、正文排版、信息密度和表单尺寸调整为适合中文阅读的形式。页面类型是：________。目标用户是：________。重点强调：________。" data-copy-success="示例提示词已复制">复制示例提示词</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="split-grid">
+        <article class="panel">
+          <h2 class="section-title">中文落地时常见问题</h2>
+          <ul class="list-clean">
+            <li>中文标题更长，原设计里的首屏留白可能不够。</li>
+            <li>正文信息更密，行高和卡片间距需要重算。</li>
+            <li>表格、表单、弹窗里的字段名称通常更长。</li>
+            <li>金额、时间、手机号、地址格式需要按中国用户习惯处理。</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2 class="section-title">最常见的误用</h2>
+          <ul class="list-clean">
+            <li>只学颜色，不学排版和节奏。</li>
+            <li>只说“像某品牌”，不说页面目标。</li>
+            <li>不先看预览，直接把 DESIGN.md 扔给 AI。</li>
+            <li>把营销页风格直接套到后台和数据台。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <p class="footer">
+      好的使用方式不是“照着某品牌抄”，而是把设计语言转成适合自己产品的约束。
+    </p>
+  </main>
+  <script src="assets/site.js"></script>
+</body>
+</html>

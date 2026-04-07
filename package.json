@@ -1,0 +1,9 @@
+{
+  "name": "awesome-design-md-cn",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-source.mjs ../awesome-design-md",
+    "sync:from": "node scripts/sync-source.mjs"
+  }
+}
