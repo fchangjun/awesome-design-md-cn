@@ -4,6 +4,21 @@
 
 基于 [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) 的公开内容整理，保留原始 `DESIGN.md` 与预览资源，并补充中文搜索、分类、详情页和使用指南。
 
+## Links
+
+- Online Preview: [fchangjun.github.io/awesome-design-md-cn](https://fchangjun.github.io/awesome-design-md-cn/)
+- Guide: [guide.html](/Users/baba/Desktop/GitHub/awesome-design-md-cn/guide.html)
+- Upstream Repo: [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)
+- Project Plan: [docs/PROJECT_PLAN.md](/Users/baba/Desktop/GitHub/awesome-design-md-cn/docs/PROJECT_PLAN.md)
+
+## Upstream
+
+This project is a Chinese-localized navigation layer built on top of the original `awesome-design-md`.
+
+- Original repository: [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)
+- Original README: [README.md](https://github.com/VoltAgent/awesome-design-md/blob/main/README.md)
+- This repository keeps the original design assets and rebuilds the browsing experience for Chinese users.
+
 ## Features
 
 - 中文首页导航
@@ -42,8 +57,3 @@ node scripts/sync-source.mjs /path/to/awesome-design-md
 
 仓库包含 GitHub Pages 工作流：
 [.github/workflows/deploy-pages.yml](/Users/baba/Desktop/GitHub/awesome-design-md-cn/.github/workflows/deploy-pages.yml)
-
-## Upstream
-
-- Upstream: [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)
-- This project keeps the original assets and rebuilds the browsing experience for Chinese users.
