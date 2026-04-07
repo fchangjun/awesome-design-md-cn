@@ -71,7 +71,7 @@ node scripts/sync-source.mjs /your/source/path
 
 本项目基于原仓库 `awesome-design-md` 的公开内容进行中文本地化整理与导航体验重构。
 
-- 原项目仓库：[HU-UH/awesome-design-md](https://github.com/HU-UH/awesome-design-md)
+- 原项目仓库：[VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)
 - 当前版本保留原始 `DESIGN.md`、预览页与目录资产，并在外层增加中文信息架构、筛选、详情页和使用指南
 
 感谢原作者整理这套高质量的 `DESIGN.md` 设计系统参考集合。
