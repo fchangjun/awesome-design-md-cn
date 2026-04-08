@@ -59,8 +59,8 @@ window.DESIGNS = [
         "nameZh": "宝马"
       },
       {
-        "slug": "ibm",
-        "nameZh": "IBM"
+        "slug": "ferrari",
+        "nameZh": "法拉利"
       }
     ]
   },
@@ -187,8 +187,8 @@ window.DESIGNS = [
         "nameZh": "宝马"
       },
       {
-        "slug": "ibm",
-        "nameZh": "IBM"
+        "slug": "ferrari",
+        "nameZh": "法拉利"
       }
     ]
   },
@@ -250,8 +250,8 @@ window.DESIGNS = [
         "nameZh": "苹果"
       },
       {
-        "slug": "ibm",
-        "nameZh": "IBM"
+        "slug": "ferrari",
+        "nameZh": "法拉利"
       }
     ]
   },
@@ -896,6 +896,69 @@ window.DESIGNS = [
     ]
   },
   {
+    "slug": "ferrari",
+    "name": "ferrari",
+    "displayName": "Ferrari",
+    "nameZh": "法拉利",
+    "summaryZh": "意式超跑品牌官网，黑白编辑感与极少量跃马红强调",
+    "category": "品牌官网",
+    "tagsZh": [
+      "汽车",
+      "豪华"
+    ],
+    "styleKeywords": [
+      "汽车",
+      "豪华",
+      "黑白编辑感",
+      "跃马红强调"
+    ],
+    "aliases": [
+      "ferrari",
+      "法拉利",
+      "汽车",
+      "豪华"
+    ],
+    "useCases": [
+      "品牌官网",
+      "营销落地页",
+      "企业介绍页"
+    ],
+    "previewLight": "design-md/ferrari/preview.html",
+    "previewDark": "design-md/ferrari/preview-dark.html",
+    "readmePath": "design-md/ferrari/README.md",
+    "designPath": "design-md/ferrari/DESIGN.md",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "营销落地页",
+      "企业介绍页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 法拉利 / Ferrari 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
+      }
+    ]
+  },
+  {
     "slug": "figma",
     "name": "figma",
     "displayName": "Figma",
@@ -1269,6 +1332,69 @@ window.DESIGNS = [
       {
         "slug": "stripe",
         "nameZh": "Stripe"
+      }
+    ]
+  },
+  {
+    "slug": "lamborghini",
+    "name": "lamborghini",
+    "displayName": "Lamborghini",
+    "nameZh": "兰博基尼",
+    "summaryZh": "兰博基尼官网，纯黑舞台感与金色强调的极致张力",
+    "category": "品牌官网",
+    "tagsZh": [
+      "汽车",
+      "豪华"
+    ],
+    "styleKeywords": [
+      "汽车",
+      "豪华",
+      "纯黑舞台感",
+      "金色强调"
+    ],
+    "aliases": [
+      "lamborghini",
+      "兰博基尼",
+      "汽车",
+      "豪华"
+    ],
+    "useCases": [
+      "品牌官网",
+      "营销落地页",
+      "企业介绍页"
+    ],
+    "previewLight": "design-md/lamborghini/preview.html",
+    "previewDark": "design-md/lamborghini/preview-dark.html",
+    "readmePath": "design-md/lamborghini/README.md",
+    "designPath": "design-md/lamborghini/DESIGN.md",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "营销落地页",
+      "企业介绍页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 兰博基尼 / Lamborghini 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
       }
     ]
   },
@@ -2159,6 +2285,69 @@ window.DESIGNS = [
     ]
   },
   {
+    "slug": "renault",
+    "name": "renault",
+    "displayName": "Renault",
+    "nameZh": "雷诺",
+    "summaryZh": "雷诺官网，极具能量的渐变车展氛围与法式几何秩序",
+    "category": "品牌官网",
+    "tagsZh": [
+      "汽车",
+      "品牌"
+    ],
+    "styleKeywords": [
+      "汽车",
+      "品牌",
+      "渐变车展氛围",
+      "法式几何秩序"
+    ],
+    "aliases": [
+      "renault",
+      "雷诺",
+      "汽车",
+      "品牌"
+    ],
+    "useCases": [
+      "品牌官网",
+      "营销落地页",
+      "企业介绍页"
+    ],
+    "previewLight": "design-md/renault/preview.html",
+    "previewDark": "design-md/renault/preview-dark.html",
+    "readmePath": "design-md/renault/README.md",
+    "designPath": "design-md/renault/DESIGN.md",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "营销落地页",
+      "企业介绍页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 雷诺 / Renault 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
+      }
+    ]
+  },
+  {
     "slug": "replicate",
     "name": "replicate",
     "displayName": "Replicate",
@@ -2840,6 +3029,69 @@ window.DESIGNS = [
       {
         "slug": "posthog",
         "nameZh": "PostHog"
+      }
+    ]
+  },
+  {
+    "slug": "tesla",
+    "name": "tesla",
+    "displayName": "Tesla",
+    "nameZh": "特斯拉",
+    "summaryZh": "特斯拉官网，极简摄影驱动的科技产品展示气质",
+    "category": "品牌官网",
+    "tagsZh": [
+      "汽车",
+      "科技"
+    ],
+    "styleKeywords": [
+      "汽车",
+      "科技",
+      "极简摄影驱动",
+      "科技产品展示"
+    ],
+    "aliases": [
+      "tesla",
+      "特斯拉",
+      "汽车",
+      "科技"
+    ],
+    "useCases": [
+      "品牌官网",
+      "营销落地页",
+      "企业介绍页"
+    ],
+    "previewLight": "design-md/tesla/preview.html",
+    "previewDark": "design-md/tesla/preview-dark.html",
+    "readmePath": "design-md/tesla/README.md",
+    "designPath": "design-md/tesla/DESIGN.md",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "营销落地页",
+      "企业介绍页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 特斯拉 / Tesla 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
       }
     ]
   },

@@ -14,7 +14,7 @@
 <div align="center">
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![DESIGN.md Count](https://img.shields.io/badge/DESIGN.md%20count-54-10b981?style=classic)
+![DESIGN.md Count](https://img.shields.io/badge/DESIGN.md%20count-58-10b981?style=classic)
 [![Last Update](https://img.shields.io/github/last-commit/fchangjun/awesome-design-md-cn?label=Last%20update&style=classic)](https://github.com/fchangjun/awesome-design-md-cn)
 
 </div>
@@ -168,6 +168,10 @@ Markdown 也是 LLM 最擅长读取的格式，所以没有额外解析和配置
 ### 汽车品牌
 
 - [**BMW**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/bmw/) - 豪华汽车品牌。深色高级表面，精确的德系工程感
+- [**Ferrari**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/ferrari/) - 豪华汽车品牌。黑白编辑感极强，法拉利红极少量点缀
+- [**Lamborghini**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/lamborghini/) - 豪华汽车品牌。纯黑舞台感、金色强调、张力极强
+- [**Renault**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/renault/) - 法国汽车品牌。高能渐变、几何秩序、现代车展感
+- [**Tesla**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/tesla/) - 电动车品牌。极简克制、摄影驱动、产品展示优先
 
 ## 本地使用
 
