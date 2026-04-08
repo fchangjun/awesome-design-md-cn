@@ -1,249 +1,799 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>awesome-design-md-cn Preview Dark</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      --bg: #0d1016;
-      --panel: rgba(17, 22, 31, 0.92);
-      --card: #131a24;
-      --card-strong: #161e2b;
-      --text: #eef2f8;
-      --muted: rgba(238, 242, 248, 0.68);
-      --quiet: rgba(238, 242, 248, 0.44);
-      --line: rgba(148, 163, 184, 0.18);
-      --accent: #7d96ff;
-      --accent-soft: rgba(125, 150, 255, 0.14);
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Preview: awesome-design-md-cn (Dark)</title>
+<style>
+  :root {
+    --bg-page: #0d1117;
+    --bg-panel: rgba(19, 24, 33, 0.92);
+    --bg-card: #141a24;
+    --bg-card-strong: #18202d;
+    --bg-panel-strong: rgba(23, 31, 43, 0.95);
+    --bg-accent-soft: rgba(125, 150, 255, 0.14);
+    --text-primary: #eef2f8;
+    --text-secondary: rgba(238, 242, 248, 0.72);
+    --text-muted: rgba(238, 242, 248, 0.48);
+    --line: rgba(148, 163, 184, 0.16);
+    --line-strong: rgba(148, 163, 184, 0.24);
+    --accent: #7d96ff;
+    --accent-strong: #aab8ff;
+    --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.28);
+    --font-sans: "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+    --font-mono: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+  }
 
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
-      background:
-        radial-gradient(circle at top right, rgba(125, 150, 255, 0.16), transparent 30%),
-        var(--bg);
-      color: var(--text);
-    }
-    .shell {
-      width: min(1200px, calc(100% - 32px));
-      margin: 24px auto 40px;
-    }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background:
+      radial-gradient(circle at 80% 6%, rgba(125, 150, 255, 0.16), transparent 24%),
+      var(--bg-page);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 28px;
+    backdrop-filter: blur(20px);
+    background: rgba(13, 17, 23, 0.78);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .nav-brand strong {
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+
+  .nav-brand span {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: -0.01em;
+  }
+
+  .nav-links a:hover { color: var(--text-primary); }
+
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 0 14px;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    background: var(--bg-panel);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .hero {
+    max-width: 1240px;
+    margin: 24px auto 0;
+    padding: 42px 32px;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background:
+      radial-gradient(circle at 82% 20%, rgba(125, 150, 255, 0.2), transparent 24%),
+      linear-gradient(180deg, #151b25, #0f141b);
+    overflow: hidden;
+  }
+
+  .hero-label {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: rgba(255, 255, 255, 0.03);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .hero h1 {
+    margin-top: 18px;
+    max-width: 760px;
+    font-size: 64px;
+    font-weight: 620;
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+  }
+
+  .hero p {
+    margin-top: 18px;
+    max-width: 620px;
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0 16px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    cursor: default;
+  }
+
+  .btn-primary {
+    background: var(--bg-accent-soft);
+    border-color: rgba(125, 150, 255, 0.24);
+    color: var(--accent-strong);
+  }
+
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: var(--line);
+    color: var(--text-primary);
+  }
+
+  .section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 72px 32px;
+  }
+
+  .section-divider {
+    max-width: 1240px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid var(--line);
+  }
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-size: 36px;
+    line-height: 1.04;
+    font-weight: 620;
+    letter-spacing: -0.045em;
+    margin-bottom: 12px;
+  }
+
+  .section-copy {
+    max-width: 680px;
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin-bottom: 28px;
+  }
+
+  .color-group + .color-group { margin-top: 28px; }
+
+  .color-group-title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 14px;
+  }
+
+  .swatch {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--bg-panel);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .swatch-color {
+    height: 90px;
+  }
+
+  .swatch-info {
+    padding: 14px;
+  }
+
+  .swatch-name {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .swatch-code,
+  .swatch-role {
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .type-list {
+    display: grid;
+    gap: 20px;
+  }
+
+  .type-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .type-item:last-child { border-bottom: none; }
+
+  .type-meta {
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+  }
+
+  .type-hero {
+    font-size: clamp(42px, 6vw, 64px);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    font-weight: 620;
+  }
+
+  .type-section {
+    font-size: 36px;
+    line-height: 1.04;
+    letter-spacing: -0.045em;
+    font-weight: 620;
+  }
+
+  .type-card {
+    font-size: 18px;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    font-weight: 640;
+  }
+
+  .type-body {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 330;
+  }
+
+  .type-label {
+    font-size: 12px;
+    font-family: var(--font-mono);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .button-row,
+  .chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .button-item,
+  .chip-item {
+    display: grid;
+    gap: 10px;
+    justify-items: start;
+  }
+
+  .button-label,
+  .chip-label {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .btn-dark-primary {
+    background: var(--bg-accent-soft);
+    border-color: rgba(125, 150, 255, 0.24);
+    color: var(--accent-strong);
+  }
+
+  .btn-dark-secondary {
+    background: var(--bg-panel);
+    border-color: var(--line-strong);
+    color: var(--text-primary);
+  }
+
+  .btn-dark-ghost {
+    background: transparent;
+    border-color: var(--line);
+    color: var(--text-secondary);
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-secondary);
+    font-size: 12px;
+  }
+
+  .chip-active {
+    background: var(--bg-accent-soft);
+    border-color: rgba(125, 150, 255, 0.24);
+    color: var(--accent-strong);
+  }
+
+  .component-grid {
+    display: grid;
+    grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+  }
+
+  .panel,
+  .sample-card {
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--bg-panel);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .panel h3,
+  .sample-card h3 {
+    font-size: 18px;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    font-weight: 640;
+  }
+
+  .panel p,
+  .sample-card p {
+    margin-top: 8px;
+    color: var(--text-secondary);
+  }
+
+  .search-input {
+    width: 100%;
+    margin-top: 14px;
+    height: 42px;
+    padding: 0 14px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-primary);
+    font: inherit;
+  }
+
+  .sample-card {
+    padding: 16px;
+    background: var(--bg-card);
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .card-kicker {
+    font-size: 11px;
+    font-family: var(--font-mono);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .card-sub {
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .card-meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+
+  .meta-pill {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 0 9px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-secondary);
+    font-size: 11px;
+  }
+
+  .action-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+
+  .mini-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    padding: 0 10px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: var(--bg-panel-strong);
+    color: var(--text-primary);
+    font-size: 12px;
+  }
+
+  .mini-btn-primary {
+    background: var(--bg-accent-soft);
+    border-color: rgba(125, 150, 255, 0.24);
+    color: var(--accent-strong);
+  }
+
+  .scale-row,
+  .radius-row,
+  .elevation-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .scale-item,
+  .radius-item,
+  .elevation-item {
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+  }
+
+  .scale-block {
+    width: 48px;
+    background: #eef2f8;
+    border-radius: 6px;
+  }
+
+  .radius-box {
+    width: 68px;
+    height: 68px;
+    background: #eef2f8;
+  }
+
+  .elevation-box {
+    width: 160px;
+    height: 110px;
+    border-radius: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+  }
+
+  .elevation-flat { box-shadow: none; }
+  .elevation-soft { box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28); }
+  .elevation-hover { box-shadow: 0 24px 52px rgba(0, 0, 0, 0.36); }
+
+  .token-note {
+    margin-top: 6px;
+    font-size: 11px;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+  }
+
+  .footer {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 24px 32px 48px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 960px) {
+    .hero h1 { font-size: 48px; }
+    .component-grid,
+    .card-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 720px) {
+    .nav { padding: 14px 18px; }
+    .nav-links { display: none; }
     .hero,
-    .panel,
-    .card {
-      border: 1px solid var(--line);
-      border-radius: 16px;
-    }
-    .hero {
-      padding: 32px;
-      background:
-        radial-gradient(circle at 84% 20%, rgba(125, 150, 255, 0.22), transparent 24%),
-        linear-gradient(180deg, rgba(20, 28, 40, 0.96), rgba(12, 16, 22, 0.98));
-    }
-    .eyebrow,
-    .label,
-    .kicker {
-      font-size: 11px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--quiet);
-    }
-    h1 {
-      margin: 18px 0 10px;
-      font-size: clamp(36px, 5vw, 54px);
-      line-height: 1.02;
-      letter-spacing: -0.05em;
-    }
-    h2 {
-      margin: 10px 0 6px;
-      font-size: 22px;
-      line-height: 1.06;
-      letter-spacing: -0.04em;
-    }
-    h3 {
-      margin: 10px 0 3px;
-      font-size: 18px;
-      line-height: 1.08;
-      letter-spacing: -0.04em;
-    }
-    p {
-      margin: 0;
-      font-size: 14px;
-      line-height: 1.6;
-      color: var(--muted);
-    }
-    .actions,
-    .chips,
-    .grid,
-    .meta,
-    .card-actions,
-    .layout {
-      display: grid;
-      gap: 12px;
-    }
-    .actions {
-      grid-auto-flow: column;
-      justify-content: start;
-      margin-top: 22px;
-    }
-    .button,
-    .chip,
-    .pill,
-    .count {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 32px;
-      padding: 0 12px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.02);
-      color: var(--text);
-      font-size: 12px;
-    }
-    .button.primary,
-    .chip.active,
-    .pill.accent {
-      background: var(--accent-soft);
-      color: var(--accent);
-      border-color: rgba(125, 150, 255, 0.28);
-    }
-    .layout {
-      grid-template-columns: 280px minmax(0, 1fr);
-      align-items: start;
-      margin-top: 20px;
-    }
-    .panel {
-      padding: 18px;
-      background: var(--panel);
-    }
-    .search {
-      width: 100%;
-      height: 42px;
-      margin-top: 16px;
-      padding: 0 14px;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.03);
-      color: var(--text);
-      font: inherit;
-    }
-    .section + .section { margin-top: 18px; }
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      gap: 14px;
-      align-items: start;
-      margin-bottom: 14px;
-    }
-    .grid.featured { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .grid.library { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .card {
-      padding: 15px;
-      background: var(--card);
-    }
-    .card.custom,
-    .card.featured {
-      background: linear-gradient(180deg, rgba(125, 150, 255, 0.06), rgba(125, 150, 255, 0)), var(--card-strong);
-    }
-    .sub { font-size: 12px; color: var(--quiet); }
-    .meta,
-    .card-actions {
-      grid-auto-flow: column;
-      justify-content: start;
-      margin-top: 12px;
-    }
-    @media (max-width: 900px) {
-      .layout { grid-template-columns: 1fr; }
-      .grid.featured,
-      .grid.library { grid-template-columns: 1fr; }
-      .actions,
-      .meta,
-      .card-actions { grid-auto-flow: row; }
-    }
-  </style>
+    .section,
+    .footer { padding-left: 20px; padding-right: 20px; }
+    .hero { margin-top: 18px; border-radius: 18px; }
+    .section-title { font-size: 28px; }
+  }
+</style>
 </head>
 <body>
-  <main class="shell">
-    <section class="hero">
-      <div class="eyebrow">Custom Case</div>
-      <h1>中文资源库，也可以有自己的 DESIGN.md。</h1>
-      <p>深色版本保留相同的低疲劳结构逻辑：一个稳定的筛选区、一个清晰的内容区，以及不抢眼的交互强调。</p>
-      <div class="actions">
-        <span class="button primary">查看案例</span>
-        <span class="button">复制提示词</span>
-      </div>
-    </section>
 
-    <section class="layout">
-      <aside class="panel">
-        <div class="label">Filters</div>
-        <h2>筛选器</h2>
-        <p>深色模式下仍然保持弱边框与单一强调色，不把筛选区做成控制台面板。</p>
-        <input class="search" value="本站风格 / 资源库" aria-label="搜索">
-        <div class="chips">
-          <span class="chip active">自定义案例</span>
-          <span class="chip">参考案例</span>
-          <span class="chip">工具聚合页</span>
+<nav class="nav">
+  <a class="nav-brand" href="#">
+    <strong>awesome-design-md-cn</strong>
+    <span>Design System Preview</span>
+  </a>
+  <div class="nav-links">
+    <a href="#colors">Colors</a>
+    <a href="#typography">Typography</a>
+    <a href="#buttons">Buttons</a>
+    <a href="#components">Components</a>
+    <a href="#spacing">Spacing</a>
+  </div>
+  <a class="nav-cta" href="#">Custom Case</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-label">Custom Design System</div>
+  <h1>Dark mode keeps the same low-fatigue structure.</h1>
+  <p>This variant preserves the same catalog format as the light preview, while adapting surfaces and contrast for a darker reading environment.</p>
+  <div class="hero-actions">
+    <span class="btn btn-primary">Use This Style</span>
+    <span class="btn btn-secondary">Open DESIGN.md</span>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="colors">
+  <div class="section-label">01 / Colors</div>
+  <h2 class="section-title">Dark Surface System</h2>
+  <p class="section-copy">The dark version should stay calm and legible, with the same single cool-blue accent and the same compact, directory-like interaction patterns.</p>
+
+  <div class="color-group">
+    <div class="color-group-title">Core Surfaces</div>
+    <div class="color-grid">
+      <article class="swatch"><div class="swatch-color" style="background:#0d1117;"></div><div class="swatch-info"><div class="swatch-name">Page Canvas</div><div class="swatch-code">#0d1117</div><div class="swatch-role">Global background</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:rgba(19,24,33,0.92);"></div><div class="swatch-info"><div class="swatch-name">Panel Surface</div><div class="swatch-code">rgba(19,24,33,0.92)</div><div class="swatch-role">Section panels</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:#141a24;"></div><div class="swatch-info"><div class="swatch-name">Card Surface</div><div class="swatch-code">#141a24</div><div class="swatch-role">Directory cards</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:#18202d;"></div><div class="swatch-info"><div class="swatch-name">Raised Dark</div><div class="swatch-code">#18202d</div><div class="swatch-role">Hover state</div></div></article>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-group-title">Text & Structure</div>
+    <div class="color-grid">
+      <article class="swatch"><div class="swatch-color" style="background:#eef2f8;"></div><div class="swatch-info"><div class="swatch-name">Primary Text</div><div class="swatch-code">#eef2f8</div><div class="swatch-role">Headlines, primary labels</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:rgba(238,242,248,0.72);"></div><div class="swatch-info"><div class="swatch-name">Secondary Text</div><div class="swatch-code">rgba(238,242,248,0.72)</div><div class="swatch-role">Supporting copy</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:rgba(148,163,184,0.16);"></div><div class="swatch-info"><div class="swatch-name">Soft Border</div><div class="swatch-code">rgba(148,163,184,0.16)</div><div class="swatch-role">Quiet outlines</div></div></article>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-group-title">Accent System</div>
+    <div class="color-grid">
+      <article class="swatch"><div class="swatch-color" style="background:#7d96ff;"></div><div class="swatch-info"><div class="swatch-name">Accent Blue</div><div class="swatch-code">#7d96ff</div><div class="swatch-role">Interactive emphasis</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:rgba(125,150,255,0.14);"></div><div class="swatch-info"><div class="swatch-name">Accent Wash</div><div class="swatch-code">rgba(125,150,255,0.14)</div><div class="swatch-role">Active fills</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:#aab8ff;"></div><div class="swatch-info"><div class="swatch-name">Accent Text</div><div class="swatch-code">#aab8ff</div><div class="swatch-role">Highlighted text</div></div></article>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="typography">
+  <div class="section-label">02 / Typography</div>
+  <h2 class="section-title">Consistent Hierarchy</h2>
+  <p class="section-copy">Dark mode does not change the type structure. The same hierarchy should remain visible through weight, spacing, and line-height rather than color noise.</p>
+
+  <div class="type-list">
+    <div class="type-item">
+      <div class="type-hero">中文资源库，也可以有自己的 DESIGN.md。</div>
+      <div class="type-meta">Hero / 64px / 620 / -0.055em</div>
+    </div>
+    <div class="type-item">
+      <div class="type-section">设计系统库</div>
+      <div class="type-meta">Section Title / 36px / 620 / -0.045em</div>
+    </div>
+    <div class="type-item">
+      <div class="type-card">本站风格</div>
+      <div class="type-meta">Card Title / 18px / 640 / -0.04em</div>
+    </div>
+    <div class="type-item">
+      <div class="type-body">深色版本依旧强调紧凑目录卡片、稳定层级和低疲劳浏览，不把深色做成夸张霓虹风。</div>
+      <div class="type-meta">Body / 14px / 330 / 1.6</div>
+    </div>
+    <div class="type-item">
+      <div class="type-label">Design Systems Library</div>
+      <div class="type-meta">Mono Label / 12px / uppercase / 0.1em</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="buttons">
+  <div class="section-label">03 / Buttons & Chips</div>
+  <h2 class="section-title">Calm Dark Controls</h2>
+  <p class="section-copy">Buttons and chips stay light and quiet in dark mode. Accent color should still be used with discipline.</p>
+
+  <div class="button-row">
+    <div class="button-item">
+      <span class="btn btn-dark-primary">查看详情</span>
+      <div class="button-label">Primary pill</div>
+    </div>
+    <div class="button-item">
+      <span class="btn btn-dark-secondary">打开预览</span>
+      <div class="button-label">Secondary pill</div>
+    </div>
+    <div class="button-item">
+      <span class="btn btn-dark-ghost">清空筛选</span>
+      <div class="button-label">Ghost action</div>
+    </div>
+  </div>
+
+  <div style="height:28px"></div>
+
+  <div class="chip-row">
+    <div class="chip-item">
+      <span class="chip chip-active">自定义案例</span>
+      <div class="chip-label">Active chip</div>
+    </div>
+    <div class="chip-item">
+      <span class="chip">参考案例</span>
+      <div class="chip-label">Default chip</div>
+    </div>
+    <div class="chip-item">
+      <span class="chip">设计资源库</span>
+      <div class="chip-label">Scenario chip</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="components">
+  <div class="section-label">04 / Components</div>
+  <h2 class="section-title">Sidebar + Compact Cards</h2>
+  <p class="section-copy">The same structural pattern stays intact: a stable filter rail, a quiet content grid, and compact cards that read like directory entries.</p>
+
+  <div class="component-grid">
+    <aside class="panel">
+      <div class="section-label" style="margin-bottom:10px;">Browse</div>
+      <h3>筛选风格</h3>
+      <p>搜索、分类、场景继续保持在同一个区域，避免深色模式下过度强调控件本身。</p>
+      <input class="search-input" value="资源库 / 深色 / 中文" aria-label="Search">
+      <div class="card-meta" style="margin-top:14px;">
+        <span class="meta-pill">全部</span>
+        <span class="meta-pill" style="background:var(--bg-accent-soft); color:var(--accent-strong);">自定义案例</span>
+        <span class="meta-pill">参考案例</span>
+      </div>
+      <div class="card-meta" style="margin-top:10px;">
+        <span class="meta-pill">设计资源库</span>
+        <span class="meta-pill">工具聚合页</span>
+      </div>
+    </aside>
+
+    <div class="card-grid">
+      <article class="sample-card" style="background:var(--bg-card-strong);">
+        <div class="card-kicker">Custom</div>
+        <h3>本站风格</h3>
+        <div class="card-sub">awesome-design-md-cn</div>
+        <p>用于沉淀中文资源库自己的设计规范，在深色模式下依旧保持低刺激和清晰层级。</p>
+        <div class="card-meta">
+          <span class="meta-pill" style="background:var(--bg-accent-soft); color:var(--accent-strong);">自定义案例</span>
+          <span class="meta-pill">设计资源库</span>
         </div>
-      </aside>
+        <div class="action-row">
+          <span class="mini-btn mini-btn-primary">查看详情</span>
+          <span class="mini-btn">打开预览</span>
+        </div>
+      </article>
 
-      <div>
-        <section class="panel section">
-          <div class="section-head">
-            <div>
-              <div class="label">Custom</div>
-              <h2>自定义案例</h2>
-            </div>
-            <span class="count">1</span>
-          </div>
-          <article class="card custom">
-            <div class="kicker">System</div>
-            <h3>本站风格</h3>
-            <div class="sub">awesome-design-md-cn</div>
-            <p>深色模式下的资源库风格，依旧强调紧凑目录卡片、稳定层级和单一冷蓝色交互反馈。</p>
-            <div class="meta">
-              <span class="pill accent">自定义案例</span>
-              <span class="pill">设计资源库</span>
-            </div>
-          </article>
-        </section>
+      <article class="sample-card">
+        <div class="card-kicker">Reference</div>
+        <h3>Vercel</h3>
+        <div class="card-sub">Vercel</div>
+        <p>精确、克制、黑白优先，适合作为工具官网和文档站的深色参考。</p>
+        <div class="card-meta">
+          <span class="meta-pill">参考案例</span>
+          <span class="meta-pill">开发者官网</span>
+        </div>
+        <div class="action-row">
+          <span class="mini-btn mini-btn-primary">查看详情</span>
+          <span class="mini-btn">打开预览</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-        <section class="panel section">
-          <div class="section-head">
-            <div>
-              <div class="label">Reference</div>
-              <h2>参考案例</h2>
-            </div>
-            <span class="count">58</span>
-          </div>
-          <div class="grid library">
-            <article class="card">
-              <div class="kicker">System</div>
-              <h3>Figma</h3>
-              <div class="sub">Figma</div>
-              <p>黑白界面层和彩色内容层分离，适合作为工具站视觉控制的参考。</p>
-            </article>
-            <article class="card">
-              <div class="kicker">System</div>
-              <h3>Notion</h3>
-              <div class="sub">Notion</div>
-              <p>柔和、安静、编辑式，适合内容型系统与文档工作台。</p>
-            </article>
-            <article class="card">
-              <div class="kicker">System</div>
-              <h3>Vercel</h3>
-              <div class="sub">Vercel</div>
-              <p>精确克制、黑白优先，适合开发工具和文档站。</p>
-            </article>
-          </div>
-        </section>
-      </div>
-    </section>
-  </main>
+<hr class="section-divider">
+
+<section class="section" id="spacing">
+  <div class="section-label">05 / Spacing & Depth</div>
+  <h2 class="section-title">Spacing, Radius, Elevation</h2>
+  <p class="section-copy">Dark mode keeps the same spacing and radius rules. Only surfaces and shadow depth shift to maintain contrast.</p>
+
+  <div class="color-group">
+    <div class="color-group-title">Spacing Scale</div>
+    <div class="scale-row">
+      <div class="scale-item"><div class="scale-block" style="height:8px;"></div><div class="token-note">8</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:12px;"></div><div class="token-note">12</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:16px;"></div><div class="token-note">16</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:24px;"></div><div class="token-note">24</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:32px;"></div><div class="token-note">32</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:40px;"></div><div class="token-note">40</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:64px;"></div><div class="token-note">64</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-group-title">Radius Scale</div>
+    <div class="radius-row">
+      <div class="radius-item"><div class="radius-box" style="border-radius:10px;"></div><div class="token-note">10px cards</div></div>
+      <div class="radius-item"><div class="radius-box" style="border-radius:12px;"></div><div class="token-note">12px panels</div></div>
+      <div class="radius-item"><div class="radius-box" style="border-radius:999px;"></div><div class="token-note">pill actions</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-group-title">Elevation</div>
+    <div class="elevation-row">
+      <div class="elevation-item"><div class="elevation-box elevation-flat"></div><div class="token-note">Flat</div></div>
+      <div class="elevation-item"><div class="elevation-box elevation-soft"></div><div class="token-note">Soft panel</div></div>
+      <div class="elevation-item"><div class="elevation-box elevation-hover"></div><div class="token-note">Hover card</div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  Dark preview for the `awesome-design-md-cn` custom case. Structured to match the preview format used by the original reference cases.
+</footer>
+
 </body>
 </html>

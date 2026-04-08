@@ -1,394 +1,798 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>awesome-design-md-cn Preview</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f2f5f9;
-      --panel: rgba(255, 255, 255, 0.86);
-      --card: #f7f9fc;
-      --card-hover: #fbfcfe;
-      --text: #111318;
-      --muted: rgba(17, 19, 24, 0.64);
-      --quiet: rgba(17, 19, 24, 0.46);
-      --line: rgba(15, 23, 42, 0.08);
-      --accent: #4b6bff;
-      --accent-soft: rgba(75, 107, 255, 0.08);
-      --hero: #111318;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Preview: awesome-design-md-cn (Light)</title>
+<style>
+  :root {
+    --bg-page: #f2f5f9;
+    --bg-card: #f7f9fc;
+    --bg-panel: rgba(255, 255, 255, 0.82);
+    --bg-panel-strong: #fbfcfe;
+    --bg-dark: #111318;
+    --text-primary: #111318;
+    --text-secondary: rgba(17, 19, 24, 0.72);
+    --text-muted: rgba(17, 19, 24, 0.5);
+    --line: rgba(15, 23, 42, 0.08);
+    --line-strong: rgba(15, 23, 42, 0.12);
+    --accent: #4b6bff;
+    --accent-soft: rgba(75, 107, 255, 0.08);
+    --accent-soft-strong: rgba(75, 107, 255, 0.14);
+    --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.05);
+    --font-sans: "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+    --font-mono: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+  }
 
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
-    .shell {
-      width: min(1200px, calc(100% - 32px));
-      margin: 24px auto 40px;
-    }
-    .hero {
-      padding: 32px;
-      border-radius: 18px;
-      background:
-        radial-gradient(circle at 85% 22%, rgba(75, 107, 255, 0.32), transparent 26%),
-        linear-gradient(180deg, #161a22, #111318);
-      color: #fff;
-    }
-    .eyebrow {
-      font-size: 12px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.62);
-    }
-    h1 {
-      margin: 18px 0 10px;
-      font-size: clamp(36px, 5vw, 54px);
-      line-height: 1.02;
-      letter-spacing: -0.05em;
-    }
-    .hero p {
-      margin: 0;
-      max-width: 560px;
-      font-size: 15px;
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 0.72);
-    }
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 22px;
-    }
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 40px;
-      padding: 0 16px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      font-size: 14px;
-      text-decoration: none;
-    }
-    .button-primary {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.18);
-      color: #fff;
-    }
-    .button-secondary {
-      background: rgba(255, 255, 255, 0.92);
-      color: var(--text);
-    }
-    .layout {
-      display: grid;
-      grid-template-columns: 280px minmax(0, 1fr);
-      gap: 18px;
-      margin-top: 22px;
-      align-items: start;
-    }
-    .panel {
-      padding: 18px;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: var(--panel);
-    }
-    .label {
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--quiet);
-    }
-    h2 {
-      margin: 10px 0 6px;
-      font-size: 22px;
-      line-height: 1.06;
-      letter-spacing: -0.04em;
-    }
-    .copy {
-      margin: 0;
-      font-size: 14px;
-      line-height: 1.6;
-      color: var(--muted);
-    }
-    .search {
-      width: 100%;
-      height: 42px;
-      margin-top: 16px;
-      padding: 0 14px;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.7);
-      color: var(--text);
-      font: inherit;
-    }
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 16px;
-    }
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      min-height: 30px;
-      padding: 0 12px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.74);
-      font-size: 12px;
-      color: rgba(15, 23, 42, 0.72);
-    }
-    .chip.active {
-      border-color: rgba(75, 107, 255, 0.18);
-      background: var(--accent-soft);
-      color: var(--accent);
-    }
-    .section + .section {
-      margin-top: 18px;
-    }
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      gap: 14px;
-      align-items: start;
-      margin-bottom: 14px;
-    }
-    .section-head p { margin: 0; }
-    .count {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 34px;
-      min-height: 28px;
-      padding: 0 10px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.72);
-      font-size: 12px;
-      color: var(--muted);
-    }
-    .grid {
-      display: grid;
-      gap: 12px;
-    }
-    .grid.featured {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    .grid.library {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-    .card {
-      padding: 15px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: var(--card);
-    }
-    .card.featured {
-      background:
-        linear-gradient(180deg, rgba(75, 107, 255, 0.05), rgba(75, 107, 255, 0)),
-        var(--card-hover);
-    }
-    .card.custom {
-      background:
-        linear-gradient(180deg, rgba(75, 107, 255, 0.05), rgba(75, 107, 255, 0)),
-        #f9fbff;
-    }
-    .kicker {
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--quiet);
-    }
-    .card h3 {
-      margin: 10px 0 3px;
-      font-size: 18px;
-      line-height: 1.08;
-      letter-spacing: -0.04em;
-    }
-    .sub {
-      font-size: 12px;
-      color: var(--quiet);
-    }
-    .card p {
-      margin: 10px 0 0;
-      font-size: 13px;
-      line-height: 1.58;
-      color: var(--muted);
-    }
-    .meta,
-    .card-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 12px;
-    }
-    .meta span,
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      min-height: 24px;
-      padding: 0 9px;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.04);
-      font-size: 11px;
-      color: rgba(15, 23, 42, 0.68);
-    }
-    .pill.accent {
-      background: var(--accent-soft);
-      color: var(--accent);
-    }
-    @media (max-width: 900px) {
-      .layout { grid-template-columns: 1fr; }
-      .grid.featured,
-      .grid.library { grid-template-columns: 1fr; }
-    }
-  </style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg-page);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 28px;
+    backdrop-filter: blur(20px);
+    background: rgba(242, 245, 249, 0.84);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .nav-brand strong {
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+
+  .nav-brand span {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: -0.01em;
+  }
+
+  .nav-links a:hover { color: var(--text-primary); }
+
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 0 14px;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    background: var(--bg-panel);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .hero {
+    max-width: 1240px;
+    margin: 24px auto 0;
+    padding: 42px 32px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 22px;
+    background:
+      radial-gradient(circle at 82% 20%, rgba(75, 107, 255, 0.28), transparent 24%),
+      linear-gradient(180deg, #161a22, #111318);
+    color: #ffffff;
+    overflow: hidden;
+  }
+
+  .hero-label {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.06);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .hero h1 {
+    margin-top: 18px;
+    max-width: 760px;
+    font-size: 64px;
+    font-weight: 620;
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+  }
+
+  .hero p {
+    margin-top: 18px;
+    max-width: 620px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0 16px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    cursor: default;
+  }
+
+  .btn-primary {
+    background: rgba(75, 107, 255, 0.16);
+    border-color: rgba(75, 107, 255, 0.34);
+    color: #ffffff;
+  }
+
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+  }
+
+  .section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 72px 32px;
+  }
+
+  .section-divider {
+    max-width: 1240px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid var(--line);
+  }
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-size: 36px;
+    line-height: 1.04;
+    font-weight: 620;
+    letter-spacing: -0.045em;
+    margin-bottom: 12px;
+  }
+
+  .section-copy {
+    max-width: 680px;
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin-bottom: 28px;
+  }
+
+  .color-group + .color-group { margin-top: 28px; }
+
+  .color-group-title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 14px;
+  }
+
+  .swatch {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--bg-panel);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .swatch-color {
+    height: 90px;
+  }
+
+  .swatch-info {
+    padding: 14px;
+  }
+
+  .swatch-name {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .swatch-code,
+  .swatch-role {
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .type-list {
+    display: grid;
+    gap: 20px;
+  }
+
+  .type-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .type-item:last-child { border-bottom: none; }
+
+  .type-meta {
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+  }
+
+  .type-hero {
+    font-size: clamp(42px, 6vw, 64px);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    font-weight: 620;
+  }
+
+  .type-section {
+    font-size: 36px;
+    line-height: 1.04;
+    letter-spacing: -0.045em;
+    font-weight: 620;
+  }
+
+  .type-card {
+    font-size: 18px;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    font-weight: 640;
+  }
+
+  .type-body {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 330;
+  }
+
+  .type-label {
+    font-size: 12px;
+    font-family: var(--font-mono);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .button-row,
+  .chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .button-item,
+  .chip-item {
+    display: grid;
+    gap: 10px;
+    justify-items: start;
+  }
+
+  .button-label,
+  .chip-label {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .btn-light-primary {
+    background: var(--accent-soft);
+    border-color: rgba(75, 107, 255, 0.2);
+    color: var(--accent);
+  }
+
+  .btn-light-secondary {
+    background: var(--bg-panel);
+    border-color: var(--line-strong);
+    color: var(--text-primary);
+  }
+
+  .btn-light-ghost {
+    background: transparent;
+    border-color: var(--line);
+    color: var(--text-secondary);
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.7);
+    color: var(--text-secondary);
+    font-size: 12px;
+  }
+
+  .chip-active {
+    background: var(--accent-soft);
+    border-color: rgba(75, 107, 255, 0.2);
+    color: var(--accent);
+  }
+
+  .component-grid {
+    display: grid;
+    grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+  }
+
+  .panel,
+  .sample-card {
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--bg-panel);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .panel h3,
+  .sample-card h3 {
+    font-size: 18px;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    font-weight: 640;
+  }
+
+  .panel p,
+  .sample-card p {
+    margin-top: 8px;
+    color: var(--text-secondary);
+  }
+
+  .search-input {
+    width: 100%;
+    margin-top: 14px;
+    height: 42px;
+    padding: 0 14px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.74);
+    color: var(--text-primary);
+    font: inherit;
+  }
+
+  .sample-card {
+    padding: 16px;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .card-kicker {
+    font-size: 11px;
+    font-family: var(--font-mono);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .card-sub {
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .card-meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+
+  .meta-pill {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 0 9px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.04);
+    color: var(--text-secondary);
+    font-size: 11px;
+  }
+
+  .action-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+
+  .mini-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    padding: 0 10px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: var(--bg-panel-strong);
+    color: var(--text-primary);
+    font-size: 12px;
+  }
+
+  .mini-btn-primary {
+    background: var(--accent-soft);
+    border-color: rgba(75, 107, 255, 0.18);
+    color: var(--accent);
+  }
+
+  .scale-row,
+  .radius-row,
+  .elevation-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .scale-item,
+  .radius-item,
+  .elevation-item {
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+  }
+
+  .scale-block {
+    width: 48px;
+    background: var(--bg-dark);
+    border-radius: 6px;
+  }
+
+  .radius-box {
+    width: 68px;
+    height: 68px;
+    background: var(--bg-dark);
+  }
+
+  .elevation-box {
+    width: 160px;
+    height: 110px;
+    border-radius: 16px;
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+  }
+
+  .elevation-flat { box-shadow: none; }
+  .elevation-soft { box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05); }
+  .elevation-hover { box-shadow: 0 16px 42px rgba(15, 23, 42, 0.08); }
+
+  .token-note {
+    margin-top: 6px;
+    font-size: 11px;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+  }
+
+  .footer {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 24px 32px 48px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 960px) {
+    .hero h1 { font-size: 48px; }
+    .component-grid,
+    .card-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 720px) {
+    .nav { padding: 14px 18px; }
+    .nav-links { display: none; }
+    .hero,
+    .section,
+    .footer { padding-left: 20px; padding-right: 20px; }
+    .hero { margin-top: 18px; border-radius: 18px; }
+    .section-title { font-size: 28px; }
+  }
+</style>
 </head>
 <body>
-  <main class="shell">
-    <section class="hero">
-      <div class="eyebrow">Custom Case</div>
-      <h1>先选风格，再写界面。</h1>
-      <p>冷灰科技风的中文资源库界面。首屏保持简洁，筛选常驻，列表低疲劳，适合长时间浏览和横向比较。</p>
-      <div class="actions">
-        <a class="button button-secondary" href="#">开始浏览</a>
-        <a class="button button-primary" href="#">查看案例</a>
+
+<nav class="nav">
+  <a class="nav-brand" href="#">
+    <strong>awesome-design-md-cn</strong>
+    <span>Design System Preview</span>
+  </a>
+  <div class="nav-links">
+    <a href="#colors">Colors</a>
+    <a href="#typography">Typography</a>
+    <a href="#buttons">Buttons</a>
+    <a href="#components">Components</a>
+    <a href="#spacing">Spacing</a>
+  </div>
+  <a class="nav-cta" href="#">Custom Case</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-label">Custom Design System</div>
+  <h1>Lightweight tech library UI, built for long Chinese reading sessions.</h1>
+  <p>This preview turns the custom `awesome-design-md-cn` case into the same kind of token catalog used by the upstream examples: colors, typography, buttons, cards, filters, spacing, radius, and elevation.</p>
+  <div class="hero-actions">
+    <span class="btn btn-primary">Use This Style</span>
+    <span class="btn btn-secondary">Open DESIGN.md</span>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="colors">
+  <div class="section-label">01 / Colors</div>
+  <h2 class="section-title">Cold Gray Palette</h2>
+  <p class="section-copy">This system avoids harsh white glare. Surfaces are slightly cooled and separated by subtle contrast, while accent color appears only where interaction needs emphasis.</p>
+
+  <div class="color-group">
+    <div class="color-group-title">Core Surfaces</div>
+    <div class="color-grid">
+      <article class="swatch"><div class="swatch-color" style="background:#f2f5f9;"></div><div class="swatch-info"><div class="swatch-name">Page Canvas</div><div class="swatch-code">#f2f5f9</div><div class="swatch-role">Global background</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.82);"></div><div class="swatch-info"><div class="swatch-name">Panel White</div><div class="swatch-code">rgba(255,255,255,0.82)</div><div class="swatch-role">Section panels</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:#f7f9fc;"></div><div class="swatch-info"><div class="swatch-name">Card Surface</div><div class="swatch-code">#f7f9fc</div><div class="swatch-role">Directory cards</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:#fbfcfe;"></div><div class="swatch-info"><div class="swatch-name">Raised Surface</div><div class="swatch-code">#fbfcfe</div><div class="swatch-role">Hover state</div></div></article>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-group-title">Text & Structure</div>
+    <div class="color-grid">
+      <article class="swatch"><div class="swatch-color" style="background:#111318;"></div><div class="swatch-info"><div class="swatch-name">Graphite</div><div class="swatch-code">#111318</div><div class="swatch-role">Primary text, dark hero</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:#1f2937;"></div><div class="swatch-info"><div class="swatch-name">Ink</div><div class="swatch-code">#1f2937</div><div class="swatch-role">High emphasis UI</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:rgba(17,19,24,0.72);"></div><div class="swatch-info"><div class="swatch-name">Secondary Text</div><div class="swatch-code">rgba(17,19,24,0.72)</div><div class="swatch-role">Supporting copy</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:rgba(15,23,42,0.08);"></div><div class="swatch-info"><div class="swatch-name">Soft Border</div><div class="swatch-code">rgba(15,23,42,0.08)</div><div class="swatch-role">Quiet outlines</div></div></article>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-group-title">Accent System</div>
+    <div class="color-grid">
+      <article class="swatch"><div class="swatch-color" style="background:#4b6bff;"></div><div class="swatch-info"><div class="swatch-name">Accent Blue</div><div class="swatch-code">#4b6bff</div><div class="swatch-role">Active states, links</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:rgba(75,107,255,0.08);"></div><div class="swatch-info"><div class="swatch-name">Accent Wash</div><div class="swatch-code">rgba(75,107,255,0.08)</div><div class="swatch-role">Soft active fills</div></div></article>
+      <article class="swatch"><div class="swatch-color" style="background:rgba(75,107,255,0.14);"></div><div class="swatch-info"><div class="swatch-name">Accent Strong Wash</div><div class="swatch-code">rgba(75,107,255,0.14)</div><div class="swatch-role">Highlighted custom case</div></div></article>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="typography">
+  <div class="section-label">02 / Typography</div>
+  <h2 class="section-title">Chinese-First Hierarchy</h2>
+  <p class="section-copy">The type system stays restrained. Big type is reserved for short hero moments, while the rest of the page relies on precise spacing and quiet secondary copy.</p>
+
+  <div class="type-list">
+    <div class="type-item">
+      <div class="type-hero">先选风格，再写界面。</div>
+      <div class="type-meta">Hero / 64px / 620 / -0.055em</div>
+    </div>
+    <div class="type-item">
+      <div class="type-section">设计系统库</div>
+      <div class="type-meta">Section Title / 36px / 620 / -0.045em</div>
+    </div>
+    <div class="type-item">
+      <div class="type-card">本站风格</div>
+      <div class="type-meta">Card Title / 18px / 640 / -0.04em</div>
+    </div>
+    <div class="type-item">
+      <div class="type-body">冷灰科技风的中文资源库界面，强调低疲劳浏览、侧栏筛选和紧凑目录卡片。</div>
+      <div class="type-meta">Body / 14px / 330 / 1.6</div>
+    </div>
+    <div class="type-item">
+      <div class="type-label">Design Systems Library</div>
+      <div class="type-meta">Mono Label / 12px / uppercase / 0.1em</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="buttons">
+  <div class="section-label">03 / Buttons & Chips</div>
+  <h2 class="section-title">Quiet Controls</h2>
+  <p class="section-copy">Buttons and chips should feel like small product controls, not loud marketing CTAs. The accent is used sparingly and sits on top of neutral surfaces.</p>
+
+  <div class="button-row">
+    <div class="button-item">
+      <span class="btn btn-light-primary">查看详情</span>
+      <div class="button-label">Primary pill</div>
+    </div>
+    <div class="button-item">
+      <span class="btn btn-light-secondary">打开预览</span>
+      <div class="button-label">Secondary pill</div>
+    </div>
+    <div class="button-item">
+      <span class="btn btn-light-ghost">清空筛选</span>
+      <div class="button-label">Ghost action</div>
+    </div>
+  </div>
+
+  <div style="height:28px"></div>
+
+  <div class="chip-row">
+    <div class="chip-item">
+      <span class="chip chip-active">自定义案例</span>
+      <div class="chip-label">Active chip</div>
+    </div>
+    <div class="chip-item">
+      <span class="chip">参考案例</span>
+      <div class="chip-label">Default chip</div>
+    </div>
+    <div class="chip-item">
+      <span class="chip">设计资源库</span>
+      <div class="chip-label">Scenario chip</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="components">
+  <div class="section-label">04 / Components</div>
+  <h2 class="section-title">Sidebar + Compact Cards</h2>
+  <p class="section-copy">The signature pattern is a stable left filter rail and a compact directory grid on the right. The cards behave like index entries, not showcase banners.</p>
+
+  <div class="component-grid">
+    <aside class="panel">
+      <div class="section-label" style="margin-bottom:10px;">Browse</div>
+      <h3>筛选风格</h3>
+      <p>搜索、分类、场景都应该在同一个稳定区域，减少滚动中的位置切换。</p>
+      <input class="search-input" value="中文 / 科技 / 资源库" aria-label="Search">
+      <div class="card-meta" style="margin-top:14px;">
+        <span class="meta-pill">全部</span>
+        <span class="meta-pill" style="background:var(--accent-soft); color:var(--accent);">自定义案例</span>
+        <span class="meta-pill">参考案例</span>
       </div>
-    </section>
-
-    <section class="layout">
-      <aside class="panel">
-        <div class="label">Browse</div>
-        <h2>筛选风格</h2>
-        <p class="copy">搜索、分类、场景都放在稳定的位置，避免首屏信息拥堵。</p>
-        <input class="search" value="资源库 / 科技 / 中文" aria-label="搜索">
-        <div class="chips">
-          <span class="chip active">全部</span>
-          <span class="chip">自定义案例</span>
-          <span class="chip">开发工具</span>
-          <span class="chip">品牌官网</span>
-        </div>
-        <div class="chips">
-          <span class="chip active">导航目录页</span>
-          <span class="chip">设计资源库</span>
-          <span class="chip">工具聚合页</span>
-        </div>
-      </aside>
-
-      <div>
-        <section class="panel section">
-          <div class="section-head">
-            <div>
-              <div class="label">Featured</div>
-              <h2>推荐起点</h2>
-            </div>
-            <span class="count">4</span>
-          </div>
-          <div class="grid featured">
-            <article class="card featured custom">
-              <div class="kicker">Custom</div>
-              <h3>本站风格</h3>
-              <div class="sub">awesome-design-md-cn</div>
-              <p>冷灰底、深色首屏、侧栏筛选、紧凑目录卡片，适合中文资源库与索引页。</p>
-              <div class="meta">
-                <span class="pill accent">自定义案例</span>
-                <span>设计资源库</span>
-              </div>
-            </article>
-            <article class="card featured">
-              <div class="kicker">Featured</div>
-              <h3>Figma</h3>
-              <div class="sub">Figma</div>
-              <p>黑白 chrome 与彩色内容区分明确，适合设计工具与产品展示。</p>
-              <div class="meta">
-                <span>效率协作</span>
-                <span>工作台</span>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="panel section">
-          <div class="section-head">
-            <div>
-              <div class="label">Library</div>
-              <h2>设计系统库</h2>
-              <p class="copy">先看自定义案例，再浏览参考案例。卡片保持紧凑，避免浏览疲劳。</p>
-            </div>
-            <span class="count">59</span>
-          </div>
-
-          <div class="section">
-            <div class="section-head">
-              <div>
-                <div class="label">Custom</div>
-                <h2>自定义案例</h2>
-              </div>
-              <span class="count">1</span>
-            </div>
-            <div class="grid">
-              <article class="card custom">
-                <div class="kicker">System</div>
-                <h3>本站风格</h3>
-                <div class="sub">awesome-design-md-cn</div>
-                <p>用于沉淀本站自身的资源库设计规范，强调低疲劳浏览和稳定层级。</p>
-                <div class="card-actions">
-                  <span class="pill accent">查看详情</span>
-                  <span class="pill">打开预览</span>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="section">
-            <div class="section-head">
-              <div>
-                <div class="label">Reference</div>
-                <h2>参考案例</h2>
-              </div>
-              <span class="count">58</span>
-            </div>
-            <div class="grid library">
-              <article class="card">
-                <div class="kicker">System</div>
-                <h3>Notion</h3>
-                <div class="sub">Notion</div>
-                <p>温和极简与编辑式排版，适合文档、工作台和结构化内容页面。</p>
-                <div class="meta">
-                  <span>参考案例</span>
-                  <span>工作台</span>
-                </div>
-              </article>
-              <article class="card">
-                <div class="kicker">System</div>
-                <h3>Stripe</h3>
-                <div class="sub">Stripe</div>
-                <p>轻字重、大留白、标志性渐变，适合支付与开发者产品介绍页。</p>
-                <div class="meta">
-                  <span>参考案例</span>
-                  <span>支付产品页</span>
-                </div>
-              </article>
-              <article class="card">
-                <div class="kicker">System</div>
-                <h3>Vercel</h3>
-                <div class="sub">Vercel</div>
-                <p>黑白高对比、精确克制、开发者导向，适合工具官网和文档站。</p>
-                <div class="meta">
-                  <span>参考案例</span>
-                  <span>开发者官网</span>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
+      <div class="card-meta" style="margin-top:10px;">
+        <span class="meta-pill">设计资源库</span>
+        <span class="meta-pill">工具聚合页</span>
       </div>
-    </section>
-  </main>
+    </aside>
+
+    <div class="card-grid">
+      <article class="sample-card">
+        <div class="card-kicker">Custom</div>
+        <h3>本站风格</h3>
+        <div class="card-sub">awesome-design-md-cn</div>
+        <p>冷灰科技风、侧栏筛选、紧凑目录卡片，适合中文资源索引和工具库。</p>
+        <div class="card-meta">
+          <span class="meta-pill" style="background:var(--accent-soft); color:var(--accent);">自定义案例</span>
+          <span class="meta-pill">设计资源库</span>
+        </div>
+        <div class="action-row">
+          <span class="mini-btn mini-btn-primary">查看详情</span>
+          <span class="mini-btn">打开预览</span>
+        </div>
+      </article>
+
+      <article class="sample-card">
+        <div class="card-kicker">Reference</div>
+        <h3>Figma</h3>
+        <div class="card-sub">Figma</div>
+        <p>黑白 chrome 与彩色内容区分明确，适合作为效率工具类页面的参考。</p>
+        <div class="card-meta">
+          <span class="meta-pill">参考案例</span>
+          <span class="meta-pill">工作台</span>
+        </div>
+        <div class="action-row">
+          <span class="mini-btn mini-btn-primary">查看详情</span>
+          <span class="mini-btn">打开预览</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="spacing">
+  <div class="section-label">05 / Spacing & Depth</div>
+  <h2 class="section-title">Spacing, Radius, Elevation</h2>
+  <p class="section-copy">This system depends more on rhythm and surface contrast than on decoration. Spacing stays disciplined, radius stays moderate, and shadows stay soft.</p>
+
+  <div class="color-group">
+    <div class="color-group-title">Spacing Scale</div>
+    <div class="scale-row">
+      <div class="scale-item"><div class="scale-block" style="height:8px;"></div><div class="token-note">8</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:12px;"></div><div class="token-note">12</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:16px;"></div><div class="token-note">16</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:24px;"></div><div class="token-note">24</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:32px;"></div><div class="token-note">32</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:40px;"></div><div class="token-note">40</div></div>
+      <div class="scale-item"><div class="scale-block" style="height:64px;"></div><div class="token-note">64</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-group-title">Radius Scale</div>
+    <div class="radius-row">
+      <div class="radius-item"><div class="radius-box" style="border-radius:10px;"></div><div class="token-note">10px cards</div></div>
+      <div class="radius-item"><div class="radius-box" style="border-radius:12px;"></div><div class="token-note">12px panels</div></div>
+      <div class="radius-item"><div class="radius-box" style="border-radius:999px;"></div><div class="token-note">pill actions</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-group-title">Elevation</div>
+    <div class="elevation-row">
+      <div class="elevation-item"><div class="elevation-box elevation-flat"></div><div class="token-note">Flat</div></div>
+      <div class="elevation-item"><div class="elevation-box elevation-soft"></div><div class="token-note">Soft panel</div></div>
+      <div class="elevation-item"><div class="elevation-box elevation-hover"></div><div class="token-note">Hover card</div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  Custom preview for the `awesome-design-md-cn` design system. Built to align with the preview format used by the original reference cases.
+</footer>
+
 </body>
 </html>
