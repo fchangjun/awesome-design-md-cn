@@ -11,6 +11,8 @@ const sourceDesignRoot = path.join(sourceRoot, "design-md");
 const targetDesignRoot = path.join(targetRoot, "design-md");
 const targetDataDir = path.join(targetRoot, "data");
 const targetDesignPagesRoot = path.join(targetRoot, "designs");
+const customCaseSlug = "awesome-design-md-cn";
+const customRelatedSlugs = ["figma", "notion", "vercel"];
 
 const nameZhMap = {
   airbnb: "爱彼迎",
@@ -215,6 +217,27 @@ function extractDesignsArray(indexHtml) {
   return vm.runInNewContext(`[${match[1]}]`);
 }
 
+async function loadSourceDesigns() {
+  try {
+    const sourceIndex = await fs.readFile(sourceIndexPath, "utf8");
+    return extractDesignsArray(sourceIndex);
+  } catch (error) {
+    if (!String(error.message || "").includes("ENOENT")) {
+      throw error;
+    }
+  }
+
+  const existingDataPath = path.join(targetDataDir, "designs.json");
+  const existingData = JSON.parse(await fs.readFile(existingDataPath, "utf8"));
+  return existingData
+    .filter((record) => (record.group || "reference") === "reference")
+    .map((record) => ({
+      name: record.slug,
+      tags: record.tagsZh || [],
+      desc: record.summaryZh || "",
+    }));
+}
+
 function unique(items) {
   return [...new Set(items.filter(Boolean))];
 }
@@ -252,6 +275,37 @@ function buildPrompt(record) {
   return `参考 ${record.nameZh} / ${record.displayName} 的视觉语言，设计一个中文 ${primary}，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。`;
 }
 
+function buildCustomRecord() {
+  return {
+    slug: customCaseSlug,
+    name: customCaseSlug,
+    displayName: customCaseSlug,
+    nameZh: "本站风格",
+    summaryZh: "冷灰科技风的中文 DESIGN.md 资源库界面，强调低疲劳浏览、侧栏筛选和紧凑目录卡片。",
+    category: "自定义案例",
+    group: "custom",
+    tagsZh: ["中文", "科技", "资源库", "筛选", "目录"],
+    styleKeywords: ["冷灰科技风", "低疲劳浏览", "左侧筛选", "紧凑目录卡片"],
+    aliases: [
+      customCaseSlug,
+      "awesome design md cn",
+      "本站风格",
+      "中文资源库",
+      "资源库界面",
+    ],
+    useCases: ["设计资源库", "导航目录页", "工具聚合页"],
+    previewLight: `design-md/${customCaseSlug}/preview.html`,
+    previewDark: `design-md/${customCaseSlug}/preview-dark.html`,
+    readmePath: `design-md/${customCaseSlug}/README.md`,
+    designPath: `design-md/${customCaseSlug}/DESIGN.md`,
+    positioningZh: "用于高密度内容浏览的中文科技风资源库，强调低疲劳、清晰筛选和稳定层级。",
+    bestFor: ["设计资源库", "风格导航页", "文档索引页", "工具聚合页"],
+    avoidFor: ["高情绪品牌大片页", "娱乐化活动落地页"],
+    aiChecklist: ["优先降低颜色刺激和纯白疲劳", "把筛选放在稳定且常驻的位置", "卡片保持紧凑，主次信息明确"],
+    recommendedPromptZh: "参考 awesome-design-md-cn 的视觉语言，设计一个中文设计资源库或风格索引页：使用浅冷灰底与深色首屏，整体只保留少量冷蓝强调；左侧使用常驻筛选栏，右侧使用紧凑目录卡片；中文标题和正文保持克制，不堆大段文案，不使用高饱和彩色块，让页面在长时间浏览时仍然低疲劳、清晰且有科技感。",
+  };
+}
+
 function enrichRecord(baseRecord) {
   const profile = categoryProfiles[baseRecord.category] || categoryProfiles["精选风格"];
   return {
@@ -287,6 +341,10 @@ function detailPageTemplate(record) {
   const readmePath = relativeFromDetail(record.readmePath);
   const designPath = relativeFromDetail(record.designPath);
   const relatedLinks = renderRelatedLinks(record.relatedItems);
+  const breadcrumbLabel = record.group === "custom" ? "自定义案例" : record.category;
+  const footerText = record.group === "custom"
+    ? "当前页是 awesome-design-md-cn 项目自定义案例，用于沉淀本站自己的界面语言与中文产品设计规范。"
+    : "当前页基于原始公开页面风格整理，仅作为设计语言参考，不代表官方设计系统。";
   const titleMarkup = record.nameZh === record.displayName
     ? escapeHtml(record.nameZh)
     : `${escapeHtml(record.nameZh)}<br>${escapeHtml(record.displayName)}`;
@@ -306,7 +364,7 @@ function detailPageTemplate(record) {
     <header class="topbar">
       <div class="brand-lockup">
         <div class="brand-name">awesome-design-md-cn</div>
-        <div class="brand-sub">中文 DESIGN.md 导航站</div>
+        <div class="brand-sub">中文 DESIGN.md 资源库</div>
       </div>
       <nav class="nav-links">
         <a class="nav-link" href="../../index.html">首页</a>
@@ -317,7 +375,7 @@ function detailPageTemplate(record) {
     <div class="breadcrumb">
       <a href="../../index.html">首页</a>
       <span>/</span>
-      <span>${escapeHtml(record.category)}</span>
+      <span>${escapeHtml(breadcrumbLabel)}</span>
       <span>/</span>
       <span>${escapeHtml(record.nameZh)}</span>
     </div>
@@ -454,7 +512,7 @@ function detailPageTemplate(record) {
     </section>
 
     <p class="footer">
-      当前页基于原始公开页面风格整理，仅作为设计语言参考，不代表官方设计系统。
+      ${escapeHtml(footerText)}
     </p>
   </main>
   <script src="../../assets/site.js"></script>
@@ -464,8 +522,7 @@ function detailPageTemplate(record) {
 }
 
 async function main() {
-  const sourceIndex = await fs.readFile(sourceIndexPath, "utf8");
-  const sourceDesigns = extractDesignsArray(sourceIndex);
+  const sourceDesigns = await loadSourceDesigns();
 
   let records = sourceDesigns.map((item) => {
     const slug = item.name;
@@ -480,6 +537,7 @@ async function main() {
       name: slug,
       displayName: displayNameMap[slug] || slug,
       nameZh,
+      group: "reference",
       summaryZh: item.desc,
       category,
       tagsZh,
@@ -498,18 +556,33 @@ async function main() {
     recommendedPromptZh: buildPrompt(record),
   }));
 
-  records = records
-    .sort((a, b) => a.displayName.localeCompare(b.displayName))
-    .map((record) => ({
+  records.push(buildCustomRecord());
+
+  records = records.sort((a, b) => {
+    if (a.group !== b.group) return a.group === "custom" ? -1 : 1;
+    return a.displayName.localeCompare(b.displayName);
+  });
+
+  const recordMap = new Map(records.map((record) => [record.slug, record]));
+  records = records.map((record) => {
+    const relatedCandidates = record.group === "custom"
+      ? customRelatedSlugs
+        .map((slug) => recordMap.get(slug))
+        .filter(Boolean)
+      : records.filter((candidate) => (
+        candidate.slug !== record.slug &&
+        candidate.group === "reference" &&
+        candidate.category === record.category
+      )).slice(0, 3);
+
+    return {
       ...record,
-      relatedItems: records
-        .filter((candidate) => candidate.slug !== record.slug && candidate.category === record.category)
-        .slice(0, 3)
-        .map((candidate) => ({
-          slug: candidate.slug,
-          nameZh: candidate.nameZh,
-        })),
-    }));
+      relatedItems: relatedCandidates.map((candidate) => ({
+        slug: candidate.slug,
+        nameZh: candidate.nameZh,
+      })),
+    };
+  });
 
   await fs.mkdir(targetDataDir, { recursive: true });
   await fs.rm(targetDesignPagesRoot, { recursive: true, force: true });

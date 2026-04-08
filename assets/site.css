@@ -1609,12 +1609,67 @@ textarea {
 }
 
 .page-home .featured-grid,
-.page-home .card-grid {
+.page-home .card-grid,
+.page-home .library-groups {
   gap: 14px;
+}
+
+.page-home .library-groups,
+.page-home .collection-group {
+  display: grid;
+}
+
+.page-home .library-groups {
+  gap: 18px;
+}
+
+.page-home .collection-group {
+  gap: 12px;
+}
+
+.page-home .group-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.page-home .group-title {
+  font-size: 18px;
+  line-height: 1.08;
+  font-weight: 620;
+  letter-spacing: -0.035em;
+}
+
+.page-home .group-copy {
+  margin-top: 4px;
+  max-width: 620px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.page-home .group-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.7);
+  color: rgba(15, 23, 42, 0.68);
+  font-size: 12px;
+  font-weight: 540;
 }
 
 .page-home .card-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.page-home .card-grid-single {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .page-home .featured-grid {
@@ -1660,6 +1715,13 @@ textarea {
   background: #f7f9fc;
 }
 
+.page-home .collection-group-custom .card {
+  border-color: rgba(75, 107, 255, 0.14);
+  background:
+    linear-gradient(180deg, rgba(75, 107, 255, 0.045), rgba(75, 107, 255, 0)),
+    #f9fbff;
+}
+
 .page-home .card::before {
   display: none;
 }
@@ -1680,6 +1742,11 @@ textarea {
 .page-home .card-grid .card:hover {
   border-color: rgba(75, 107, 255, 0.12);
   background: #fbfcfe;
+}
+
+.page-home .collection-group-custom .card:hover {
+  border-color: rgba(75, 107, 255, 0.18);
+  background: #ffffff;
 }
 
 .page-home .card-title {
@@ -1880,6 +1947,11 @@ textarea {
   .page-home .card-grid,
   .page-home .stats-grid {
     grid-template-columns: 1fr;
+  }
+
+  .page-home .group-head {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .page-home .library-note {

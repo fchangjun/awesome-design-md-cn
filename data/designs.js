@@ -1,9 +1,79 @@
 window.DESIGNS = [
   {
+    "slug": "awesome-design-md-cn",
+    "name": "awesome-design-md-cn",
+    "displayName": "awesome-design-md-cn",
+    "nameZh": "本站风格",
+    "summaryZh": "冷灰科技风的中文 DESIGN.md 资源库界面，强调低疲劳浏览、侧栏筛选和紧凑目录卡片。",
+    "category": "自定义案例",
+    "group": "custom",
+    "tagsZh": [
+      "中文",
+      "科技",
+      "资源库",
+      "筛选",
+      "目录"
+    ],
+    "styleKeywords": [
+      "冷灰科技风",
+      "低疲劳浏览",
+      "左侧筛选",
+      "紧凑目录卡片"
+    ],
+    "aliases": [
+      "awesome-design-md-cn",
+      "awesome design md cn",
+      "本站风格",
+      "中文资源库",
+      "资源库界面"
+    ],
+    "useCases": [
+      "设计资源库",
+      "导航目录页",
+      "工具聚合页"
+    ],
+    "previewLight": "design-md/awesome-design-md-cn/preview.html",
+    "previewDark": "design-md/awesome-design-md-cn/preview-dark.html",
+    "readmePath": "design-md/awesome-design-md-cn/README.md",
+    "designPath": "design-md/awesome-design-md-cn/DESIGN.md",
+    "positioningZh": "用于高密度内容浏览的中文科技风资源库，强调低疲劳、清晰筛选和稳定层级。",
+    "bestFor": [
+      "设计资源库",
+      "风格导航页",
+      "文档索引页",
+      "工具聚合页"
+    ],
+    "avoidFor": [
+      "高情绪品牌大片页",
+      "娱乐化活动落地页"
+    ],
+    "aiChecklist": [
+      "优先降低颜色刺激和纯白疲劳",
+      "把筛选放在稳定且常驻的位置",
+      "卡片保持紧凑，主次信息明确"
+    ],
+    "recommendedPromptZh": "参考 awesome-design-md-cn 的视觉语言，设计一个中文设计资源库或风格索引页：使用浅冷灰底与深色首屏，整体只保留少量冷蓝强调；左侧使用常驻筛选栏，右侧使用紧凑目录卡片；中文标题和正文保持克制，不堆大段文案，不使用高饱和彩色块，让页面在长时间浏览时仍然低疲劳、清晰且有科技感。",
+    "relatedItems": [
+      {
+        "slug": "figma",
+        "nameZh": "Figma"
+      },
+      {
+        "slug": "notion",
+        "nameZh": "Notion"
+      },
+      {
+        "slug": "vercel",
+        "nameZh": "Vercel"
+      }
+    ]
+  },
+  {
     "slug": "airbnb",
     "name": "airbnb",
     "displayName": "Airbnb",
     "nameZh": "爱彼迎",
+    "group": "reference",
     "summaryZh": "温馨、友好、旅行感，柔和圆角与人情味设计",
     "category": "品牌官网",
     "tagsZh": [
@@ -69,6 +139,7 @@ window.DESIGNS = [
     "name": "airtable",
     "displayName": "Airtable",
     "nameZh": "Airtable",
+    "group": "reference",
     "summaryZh": "灵活数据库+电子表格，模块化卡片式界面",
     "category": "开发工具",
     "tagsZh": [
@@ -133,6 +204,7 @@ window.DESIGNS = [
     "name": "apple",
     "displayName": "Apple",
     "nameZh": "苹果",
+    "group": "reference",
     "summaryZh": "极致简洁、大量留白、高端科技感",
     "category": "品牌官网",
     "tagsZh": [
@@ -197,6 +269,7 @@ window.DESIGNS = [
     "name": "bmw",
     "displayName": "BMW",
     "nameZh": "宝马",
+    "group": "reference",
     "summaryZh": "德系豪华汽车官网，精致光影与深邃质感",
     "category": "品牌官网",
     "tagsZh": [
@@ -260,6 +333,7 @@ window.DESIGNS = [
     "name": "cal",
     "displayName": "Cal",
     "nameZh": "Cal",
+    "group": "reference",
     "summaryZh": "Calendly风格，简洁预约排期界面",
     "category": "效率协作",
     "tagsZh": [
@@ -324,6 +398,7 @@ window.DESIGNS = [
     "name": "claude",
     "displayName": "Claude",
     "nameZh": "Claude",
+    "group": "reference",
     "summaryZh": "Anthropic旗下AI助手，极简白底+优雅紫",
     "category": "AI 产品",
     "tagsZh": [
@@ -389,6 +464,7 @@ window.DESIGNS = [
     "name": "clay",
     "displayName": "Clay",
     "nameZh": "Clay",
+    "group": "reference",
     "summaryZh": "高端B2B销售CRM，精致卡片与渐变",
     "category": "精选风格",
     "tagsZh": [
@@ -451,6 +527,7 @@ window.DESIGNS = [
     "name": "clickhouse",
     "displayName": "ClickHouse",
     "nameZh": "ClickHouse",
+    "group": "reference",
     "summaryZh": "数据库产品，技术感深色界面",
     "category": "开发工具",
     "tagsZh": [
@@ -514,6 +591,7 @@ window.DESIGNS = [
     "name": "cohere",
     "displayName": "Cohere",
     "nameZh": "Cohere",
+    "group": "reference",
     "summaryZh": "AI初创公司，现代科技感深蓝+白色",
     "category": "AI 产品",
     "tagsZh": [
@@ -579,6 +657,7 @@ window.DESIGNS = [
     "name": "coinbase",
     "displayName": "Coinbase",
     "nameZh": "Coinbase",
+    "group": "reference",
     "summaryZh": "加密货币交易所，专业金融深色界面",
     "category": "金融科技",
     "tagsZh": [
@@ -643,6 +722,7 @@ window.DESIGNS = [
     "name": "composio",
     "displayName": "Composio",
     "nameZh": "Composio",
+    "group": "reference",
     "summaryZh": "AI Agent工具平台，现代深色UI",
     "category": "开发工具",
     "tagsZh": [
@@ -707,6 +787,7 @@ window.DESIGNS = [
     "name": "cursor",
     "displayName": "Cursor",
     "nameZh": "Cursor",
+    "group": "reference",
     "summaryZh": "AI代码编辑器官网，深色沉浸式体验",
     "category": "AI 产品",
     "tagsZh": [
@@ -771,6 +852,7 @@ window.DESIGNS = [
     "name": "elevenlabs",
     "displayName": "ElevenLabs",
     "nameZh": "ElevenLabs",
+    "group": "reference",
     "summaryZh": "AI语音合成，渐变深色+科技感",
     "category": "AI 产品",
     "tagsZh": [
@@ -836,6 +918,7 @@ window.DESIGNS = [
     "name": "expo",
     "displayName": "Expo",
     "nameZh": "Expo",
+    "group": "reference",
     "summaryZh": "React Native开发平台，简洁技术文档风格",
     "category": "开发工具",
     "tagsZh": [
@@ -900,6 +983,7 @@ window.DESIGNS = [
     "name": "ferrari",
     "displayName": "Ferrari",
     "nameZh": "法拉利",
+    "group": "reference",
     "summaryZh": "意式超跑品牌官网，黑白编辑感与极少量跃马红强调",
     "category": "品牌官网",
     "tagsZh": [
@@ -909,8 +993,8 @@ window.DESIGNS = [
     "styleKeywords": [
       "汽车",
       "豪华",
-      "黑白编辑感",
-      "跃马红强调"
+      "意式超跑品牌官网",
+      "黑白编辑感与极少量跃马红强调"
     ],
     "aliases": [
       "ferrari",
@@ -963,6 +1047,7 @@ window.DESIGNS = [
     "name": "figma",
     "displayName": "Figma",
     "nameZh": "Figma",
+    "group": "reference",
     "summaryZh": "设计协作工具，标志性的深色+紫灰",
     "category": "效率协作",
     "tagsZh": [
@@ -1028,6 +1113,7 @@ window.DESIGNS = [
     "name": "framer",
     "displayName": "Framer",
     "nameZh": "Framer",
+    "group": "reference",
     "summaryZh": "无代码建站工具，艺术感深色着陆页",
     "category": "内容与建站",
     "tagsZh": [
@@ -1088,6 +1174,7 @@ window.DESIGNS = [
     "name": "hashicorp",
     "displayName": "HashiCorp",
     "nameZh": "HashiCorp",
+    "group": "reference",
     "summaryZh": "DevOps工具厂商，蓝色技术文档风格",
     "category": "开发工具",
     "tagsZh": [
@@ -1151,6 +1238,7 @@ window.DESIGNS = [
     "name": "ibm",
     "displayName": "IBM",
     "nameZh": "IBM",
+    "group": "reference",
     "summaryZh": "蓝色巨人企业风格，国际化专业设计",
     "category": "品牌官网",
     "tagsZh": [
@@ -1214,6 +1302,7 @@ window.DESIGNS = [
     "name": "intercom",
     "displayName": "Intercom",
     "nameZh": "Intercom",
+    "group": "reference",
     "summaryZh": "客户沟通平台，友好绿色品牌色",
     "category": "精选风格",
     "tagsZh": [
@@ -1276,6 +1365,7 @@ window.DESIGNS = [
     "name": "kraken",
     "displayName": "Kraken",
     "nameZh": "Kraken",
+    "group": "reference",
     "summaryZh": "加密货币交易所，海怪深色品牌",
     "category": "金融科技",
     "tagsZh": [
@@ -1340,6 +1430,7 @@ window.DESIGNS = [
     "name": "lamborghini",
     "displayName": "Lamborghini",
     "nameZh": "兰博基尼",
+    "group": "reference",
     "summaryZh": "兰博基尼官网，纯黑舞台感与金色强调的极致张力",
     "category": "品牌官网",
     "tagsZh": [
@@ -1349,8 +1440,8 @@ window.DESIGNS = [
     "styleKeywords": [
       "汽车",
       "豪华",
-      "纯黑舞台感",
-      "金色强调"
+      "兰博基尼官网",
+      "纯黑舞台感与金色强调的极致张力"
     ],
     "aliases": [
       "lamborghini",
@@ -1403,6 +1494,7 @@ window.DESIGNS = [
     "name": "linear.app",
     "displayName": "Linear",
     "nameZh": "Linear",
+    "group": "reference",
     "summaryZh": "问题追踪神器，深色极简工程美学",
     "category": "效率协作",
     "tagsZh": [
@@ -1468,6 +1560,7 @@ window.DESIGNS = [
     "name": "lovable",
     "displayName": "Lovable",
     "nameZh": "Lovable",
+    "group": "reference",
     "summaryZh": "AI无代码建站，温暖现代感",
     "category": "AI 产品",
     "tagsZh": [
@@ -1532,6 +1625,7 @@ window.DESIGNS = [
     "name": "minimax",
     "displayName": "MiniMax",
     "nameZh": "MiniMax",
+    "group": "reference",
     "summaryZh": "AI大模型公司，现代科技风格",
     "category": "AI 产品",
     "tagsZh": [
@@ -1596,6 +1690,7 @@ window.DESIGNS = [
     "name": "mintlify",
     "displayName": "Mintlify",
     "nameZh": "Mintlify",
+    "group": "reference",
     "summaryZh": "文档站点生成器，简洁现代文档",
     "category": "开发工具",
     "tagsZh": [
@@ -1659,6 +1754,7 @@ window.DESIGNS = [
     "name": "miro",
     "displayName": "Miro",
     "nameZh": "Miro",
+    "group": "reference",
     "summaryZh": "在线白板协作，创意工作空间",
     "category": "效率协作",
     "tagsZh": [
@@ -1723,6 +1819,7 @@ window.DESIGNS = [
     "name": "mistral.ai",
     "displayName": "Mistral AI",
     "nameZh": "Mistral",
+    "group": "reference",
     "summaryZh": "法国AI实验室，极简法式优雅",
     "category": "AI 产品",
     "tagsZh": [
@@ -1788,6 +1885,7 @@ window.DESIGNS = [
     "name": "mongodb",
     "displayName": "MongoDB",
     "nameZh": "MongoDB",
+    "group": "reference",
     "summaryZh": "文档数据库，绿色技术品牌",
     "category": "开发工具",
     "tagsZh": [
@@ -1851,6 +1949,7 @@ window.DESIGNS = [
     "name": "notion",
     "displayName": "Notion",
     "nameZh": "Notion",
+    "group": "reference",
     "summaryZh": "笔记与协作工具，温暖纸张质感极简",
     "category": "效率协作",
     "tagsZh": [
@@ -1915,6 +2014,7 @@ window.DESIGNS = [
     "name": "nvidia",
     "displayName": "NVIDIA",
     "nameZh": "英伟达",
+    "group": "reference",
     "summaryZh": "GPU芯片巨头，深绿科技黑+光效",
     "category": "品牌官网",
     "tagsZh": [
@@ -1979,6 +2079,7 @@ window.DESIGNS = [
     "name": "ollama",
     "displayName": "Ollama",
     "nameZh": "Ollama",
+    "group": "reference",
     "summaryZh": "本地AI模型运行，简约开发者工具",
     "category": "AI 产品",
     "tagsZh": [
@@ -2043,6 +2144,7 @@ window.DESIGNS = [
     "name": "opencode.ai",
     "displayName": "OpenCode",
     "nameZh": "OpenCode",
+    "group": "reference",
     "summaryZh": "AI代码平台，现代开发者UI",
     "category": "AI 产品",
     "tagsZh": [
@@ -2108,6 +2210,7 @@ window.DESIGNS = [
     "name": "pinterest",
     "displayName": "Pinterest",
     "nameZh": "Pinterest",
+    "group": "reference",
     "summaryZh": "图片社交平台，明亮活泼红白",
     "category": "内容平台",
     "tagsZh": [
@@ -2163,6 +2266,7 @@ window.DESIGNS = [
     "name": "posthog",
     "displayName": "PostHog",
     "nameZh": "PostHog",
+    "group": "reference",
     "summaryZh": "产品分析平台，温暖黄色品牌",
     "category": "精选风格",
     "tagsZh": [
@@ -2225,6 +2329,7 @@ window.DESIGNS = [
     "name": "raycast",
     "displayName": "Raycast",
     "nameZh": "Raycast",
+    "group": "reference",
     "summaryZh": "macOS效率工具，简约深色工具感",
     "category": "效率协作",
     "tagsZh": [
@@ -2289,6 +2394,7 @@ window.DESIGNS = [
     "name": "renault",
     "displayName": "Renault",
     "nameZh": "雷诺",
+    "group": "reference",
     "summaryZh": "雷诺官网，极具能量的渐变车展氛围与法式几何秩序",
     "category": "品牌官网",
     "tagsZh": [
@@ -2298,8 +2404,8 @@ window.DESIGNS = [
     "styleKeywords": [
       "汽车",
       "品牌",
-      "渐变车展氛围",
-      "法式几何秩序"
+      "雷诺官网",
+      "极具能量的渐变车展氛围与法式几何秩序"
     ],
     "aliases": [
       "renault",
@@ -2352,6 +2458,7 @@ window.DESIGNS = [
     "name": "replicate",
     "displayName": "Replicate",
     "nameZh": "Replicate",
+    "group": "reference",
     "summaryZh": "AI模型云托管，简洁开发者平台",
     "category": "AI 产品",
     "tagsZh": [
@@ -2416,6 +2523,7 @@ window.DESIGNS = [
     "name": "resend",
     "displayName": "Resend",
     "nameZh": "Resend",
+    "group": "reference",
     "summaryZh": "邮件API服务，极简开发者邮件工具",
     "category": "开发工具",
     "tagsZh": [
@@ -2479,6 +2587,7 @@ window.DESIGNS = [
     "name": "revolut",
     "displayName": "Revolut",
     "nameZh": "Revolut",
+    "group": "reference",
     "summaryZh": "数字银行，现代金融科技感",
     "category": "金融科技",
     "tagsZh": [
@@ -2543,6 +2652,7 @@ window.DESIGNS = [
     "name": "runwayml",
     "displayName": "Runway",
     "nameZh": "Runway",
+    "group": "reference",
     "summaryZh": "AI视频生成，前沿创意技术",
     "category": "AI 产品",
     "tagsZh": [
@@ -2607,6 +2717,7 @@ window.DESIGNS = [
     "name": "sanity",
     "displayName": "Sanity",
     "nameZh": "Sanity",
+    "group": "reference",
     "summaryZh": "无头CMS平台，内容优先设计",
     "category": "内容与建站",
     "tagsZh": [
@@ -2667,6 +2778,7 @@ window.DESIGNS = [
     "name": "sentry",
     "displayName": "Sentry",
     "nameZh": "Sentry",
+    "group": "reference",
     "summaryZh": "错误追踪平台，开发者工具深色",
     "category": "开发工具",
     "tagsZh": [
@@ -2730,6 +2842,7 @@ window.DESIGNS = [
     "name": "spacex",
     "displayName": "SpaceX",
     "nameZh": "SpaceX",
+    "group": "reference",
     "summaryZh": "SpaceX官网，太空探索深色沉浸",
     "category": "品牌官网",
     "tagsZh": [
@@ -2793,6 +2906,7 @@ window.DESIGNS = [
     "name": "spotify",
     "displayName": "Spotify",
     "nameZh": "Spotify",
+    "group": "reference",
     "summaryZh": "音乐流媒体，绿色品牌深色模式",
     "category": "内容平台",
     "tagsZh": [
@@ -2848,6 +2962,7 @@ window.DESIGNS = [
     "name": "stripe",
     "displayName": "Stripe",
     "nameZh": "Stripe",
+    "group": "reference",
     "summaryZh": "支付API平台，极致精致开发者文档",
     "category": "金融科技",
     "tagsZh": [
@@ -2912,6 +3027,7 @@ window.DESIGNS = [
     "name": "supabase",
     "displayName": "Supabase",
     "nameZh": "Supabase",
+    "group": "reference",
     "summaryZh": "开源Firebase替代，渐变深色技术",
     "category": "开发工具",
     "tagsZh": [
@@ -2975,6 +3091,7 @@ window.DESIGNS = [
     "name": "superhuman",
     "displayName": "Superhuman",
     "nameZh": "Superhuman",
+    "group": "reference",
     "summaryZh": "极速邮件客户端，奢华高端定位",
     "category": "精选风格",
     "tagsZh": [
@@ -3037,6 +3154,7 @@ window.DESIGNS = [
     "name": "tesla",
     "displayName": "Tesla",
     "nameZh": "特斯拉",
+    "group": "reference",
     "summaryZh": "特斯拉官网，极简摄影驱动的科技产品展示气质",
     "category": "品牌官网",
     "tagsZh": [
@@ -3046,8 +3164,8 @@ window.DESIGNS = [
     "styleKeywords": [
       "汽车",
       "科技",
-      "极简摄影驱动",
-      "科技产品展示"
+      "特斯拉官网",
+      "极简摄影驱动的科技产品展示气质"
     ],
     "aliases": [
       "tesla",
@@ -3100,6 +3218,7 @@ window.DESIGNS = [
     "name": "together.ai",
     "displayName": "Together AI",
     "nameZh": "Together AI",
+    "group": "reference",
     "summaryZh": "AI云平台，渐变深色开发者UI",
     "category": "AI 产品",
     "tagsZh": [
@@ -3165,6 +3284,7 @@ window.DESIGNS = [
     "name": "uber",
     "displayName": "Uber",
     "nameZh": "Uber",
+    "group": "reference",
     "summaryZh": "出行巨头，精致黑白企业风格",
     "category": "品牌官网",
     "tagsZh": [
@@ -3228,6 +3348,7 @@ window.DESIGNS = [
     "name": "vercel",
     "displayName": "Vercel",
     "nameZh": "Vercel",
+    "group": "reference",
     "summaryZh": "前端部署平台，极简深色开发者美学",
     "category": "开发工具",
     "tagsZh": [
@@ -3291,6 +3412,7 @@ window.DESIGNS = [
     "name": "voltagent",
     "displayName": "VoltAgent",
     "nameZh": "VoltAgent",
+    "group": "reference",
     "summaryZh": "VoltAgent自家官网，极简技术感",
     "category": "AI 产品",
     "tagsZh": [
@@ -3355,6 +3477,7 @@ window.DESIGNS = [
     "name": "warp",
     "displayName": "Warp",
     "nameZh": "Warp",
+    "group": "reference",
     "summaryZh": "AI终端应用，现代终端美学",
     "category": "AI 产品",
     "tagsZh": [
@@ -3419,6 +3542,7 @@ window.DESIGNS = [
     "name": "webflow",
     "displayName": "Webflow",
     "nameZh": "Webflow",
+    "group": "reference",
     "summaryZh": "无代码建站，清晰蓝色教学风格",
     "category": "内容与建站",
     "tagsZh": [
@@ -3479,6 +3603,7 @@ window.DESIGNS = [
     "name": "wise",
     "displayName": "Wise",
     "nameZh": "Wise",
+    "group": "reference",
     "summaryZh": "国际汇款平台，简洁透明金融UI",
     "category": "金融科技",
     "tagsZh": [
@@ -3543,6 +3668,7 @@ window.DESIGNS = [
     "name": "x.ai",
     "displayName": "xAI",
     "nameZh": "xAI",
+    "group": "reference",
     "summaryZh": "AI日程助手，简洁任务管理",
     "category": "AI 产品",
     "tagsZh": [
@@ -3608,6 +3734,7 @@ window.DESIGNS = [
     "name": "zapier",
     "displayName": "Zapier",
     "nameZh": "Zapier",
+    "group": "reference",
     "summaryZh": "自动化平台，经典蓝白效率工具",
     "category": "效率协作",
     "tagsZh": [

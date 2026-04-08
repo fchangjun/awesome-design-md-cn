@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>awesome-design-md-cn Preview</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f2f5f9;
+      --panel: rgba(255, 255, 255, 0.86);
+      --card: #f7f9fc;
+      --card-hover: #fbfcfe;
+      --text: #111318;
+      --muted: rgba(17, 19, 24, 0.64);
+      --quiet: rgba(17, 19, 24, 0.46);
+      --line: rgba(15, 23, 42, 0.08);
+      --accent: #4b6bff;
+      --accent-soft: rgba(75, 107, 255, 0.08);
+      --hero: #111318;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .shell {
+      width: min(1200px, calc(100% - 32px));
+      margin: 24px auto 40px;
+    }
+    .hero {
+      padding: 32px;
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at 85% 22%, rgba(75, 107, 255, 0.32), transparent 26%),
+        linear-gradient(180deg, #161a22, #111318);
+      color: #fff;
+    }
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.62);
+    }
+    h1 {
+      margin: 18px 0 10px;
+      font-size: clamp(36px, 5vw, 54px);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+    }
+    .hero p {
+      margin: 0;
+      max-width: 560px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.72);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .button-primary {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.18);
+      color: #fff;
+    }
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--text);
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+      align-items: start;
+    }
+    .panel {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel);
+    }
+    .label {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--quiet);
+    }
+    h2 {
+      margin: 10px 0 6px;
+      font-size: 22px;
+      line-height: 1.06;
+      letter-spacing: -0.04em;
+    }
+    .copy {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+    .search {
+      width: 100%;
+      height: 42px;
+      margin-top: 16px;
+      padding: 0 14px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--text);
+      font: inherit;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.74);
+      font-size: 12px;
+      color: rgba(15, 23, 42, 0.72);
+    }
+    .chip.active {
+      border-color: rgba(75, 107, 255, 0.18);
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .section + .section {
+      margin-top: 18px;
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: start;
+      margin-bottom: 14px;
+    }
+    .section-head p { margin: 0; }
+    .count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 34px;
+      min-height: 28px;
+      padding: 0 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      gap: 12px;
+    }
+    .grid.featured {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .grid.library {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .card {
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--card);
+    }
+    .card.featured {
+      background:
+        linear-gradient(180deg, rgba(75, 107, 255, 0.05), rgba(75, 107, 255, 0)),
+        var(--card-hover);
+    }
+    .card.custom {
+      background:
+        linear-gradient(180deg, rgba(75, 107, 255, 0.05), rgba(75, 107, 255, 0)),
+        #f9fbff;
+    }
+    .kicker {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--quiet);
+    }
+    .card h3 {
+      margin: 10px 0 3px;
+      font-size: 18px;
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+    .sub {
+      font-size: 12px;
+      color: var(--quiet);
+    }
+    .card p {
+      margin: 10px 0 0;
+      font-size: 13px;
+      line-height: 1.58;
+      color: var(--muted);
+    }
+    .meta,
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .meta span,
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 9px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.04);
+      font-size: 11px;
+      color: rgba(15, 23, 42, 0.68);
+    }
+    .pill.accent {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      .grid.featured,
+      .grid.library { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">Custom Case</div>
+      <h1>先选风格，再写界面。</h1>
+      <p>冷灰科技风的中文资源库界面。首屏保持简洁，筛选常驻，列表低疲劳，适合长时间浏览和横向比较。</p>
+      <div class="actions">
+        <a class="button button-secondary" href="#">开始浏览</a>
+        <a class="button button-primary" href="#">查看案例</a>
+      </div>
+    </section>
+
+    <section class="layout">
+      <aside class="panel">
+        <div class="label">Browse</div>
+        <h2>筛选风格</h2>
+        <p class="copy">搜索、分类、场景都放在稳定的位置，避免首屏信息拥堵。</p>
+        <input class="search" value="资源库 / 科技 / 中文" aria-label="搜索">
+        <div class="chips">
+          <span class="chip active">全部</span>
+          <span class="chip">自定义案例</span>
+          <span class="chip">开发工具</span>
+          <span class="chip">品牌官网</span>
+        </div>
+        <div class="chips">
+          <span class="chip active">导航目录页</span>
+          <span class="chip">设计资源库</span>
+          <span class="chip">工具聚合页</span>
+        </div>
+      </aside>
+
+      <div>
+        <section class="panel section">
+          <div class="section-head">
+            <div>
+              <div class="label">Featured</div>
+              <h2>推荐起点</h2>
+            </div>
+            <span class="count">4</span>
+          </div>
+          <div class="grid featured">
+            <article class="card featured custom">
+              <div class="kicker">Custom</div>
+              <h3>本站风格</h3>
+              <div class="sub">awesome-design-md-cn</div>
+              <p>冷灰底、深色首屏、侧栏筛选、紧凑目录卡片，适合中文资源库与索引页。</p>
+              <div class="meta">
+                <span class="pill accent">自定义案例</span>
+                <span>设计资源库</span>
+              </div>
+            </article>
+            <article class="card featured">
+              <div class="kicker">Featured</div>
+              <h3>Figma</h3>
+              <div class="sub">Figma</div>
+              <p>黑白 chrome 与彩色内容区分明确，适合设计工具与产品展示。</p>
+              <div class="meta">
+                <span>效率协作</span>
+                <span>工作台</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel section">
+          <div class="section-head">
+            <div>
+              <div class="label">Library</div>
+              <h2>设计系统库</h2>
+              <p class="copy">先看自定义案例，再浏览参考案例。卡片保持紧凑，避免浏览疲劳。</p>
+            </div>
+            <span class="count">59</span>
+          </div>
+
+          <div class="section">
+            <div class="section-head">
+              <div>
+                <div class="label">Custom</div>
+                <h2>自定义案例</h2>
+              </div>
+              <span class="count">1</span>
+            </div>
+            <div class="grid">
+              <article class="card custom">
+                <div class="kicker">System</div>
+                <h3>本站风格</h3>
+                <div class="sub">awesome-design-md-cn</div>
+                <p>用于沉淀本站自身的资源库设计规范，强调低疲劳浏览和稳定层级。</p>
+                <div class="card-actions">
+                  <span class="pill accent">查看详情</span>
+                  <span class="pill">打开预览</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-head">
+              <div>
+                <div class="label">Reference</div>
+                <h2>参考案例</h2>
+              </div>
+              <span class="count">58</span>
+            </div>
+            <div class="grid library">
+              <article class="card">
+                <div class="kicker">System</div>
+                <h3>Notion</h3>
+                <div class="sub">Notion</div>
+                <p>温和极简与编辑式排版，适合文档、工作台和结构化内容页面。</p>
+                <div class="meta">
+                  <span>参考案例</span>
+                  <span>工作台</span>
+                </div>
+              </article>
+              <article class="card">
+                <div class="kicker">System</div>
+                <h3>Stripe</h3>
+                <div class="sub">Stripe</div>
+                <p>轻字重、大留白、标志性渐变，适合支付与开发者产品介绍页。</p>
+                <div class="meta">
+                  <span>参考案例</span>
+                  <span>支付产品页</span>
+                </div>
+              </article>
+              <article class="card">
+                <div class="kicker">System</div>
+                <h3>Vercel</h3>
+                <div class="sub">Vercel</div>
+                <p>黑白高对比、精确克制、开发者导向，适合工具官网和文档站。</p>
+                <div class="meta">
+                  <span>参考案例</span>
+                  <span>开发者官网</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

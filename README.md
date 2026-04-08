@@ -14,7 +14,7 @@
 <div align="center">
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![DESIGN.md Count](https://img.shields.io/badge/DESIGN.md%20count-58-10b981?style=classic)
+![DESIGN.md Count](https://img.shields.io/badge/DESIGN.md%20count-59-10b981?style=classic)
 [![Last Update](https://img.shields.io/github/last-commit/fchangjun/awesome-design-md-cn?label=Last%20update&style=classic)](https://github.com/fchangjun/awesome-design-md-cn)
 
 </div>
@@ -24,6 +24,11 @@
 复制一份 `DESIGN.md` 到你的项目里，告诉 AI Agent “按这个风格给我做一个页面”，就能更稳定地生成接近目标视觉语言的 UI。
 
 这个仓库基于 [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) 做中文本地化整理。目标不是改变原项目定义，而是让原项目对中文用户更友好、更容易理解和使用。
+
+目前仓库包含：
+
+- `58` 个参考案例：来自原项目收录的公开网站风格参考
+- `1` 个自定义案例：`awesome-design-md-cn` 自己沉淀出的资源库设计语言
 
 ## 快速入口
 
@@ -93,6 +98,10 @@ Markdown 也是 LLM 最擅长读取的格式，所以没有额外解析和配置
 - 更适合中文用户的浏览与理解入口
 
 ## 收录内容
+
+### 自定义案例
+
+- [**awesome-design-md-cn**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/awesome-design-md-cn/) - 项目自定义案例。冷灰科技风、低疲劳浏览、左侧筛选、紧凑目录卡片
 
 ### AI 与机器学习
 

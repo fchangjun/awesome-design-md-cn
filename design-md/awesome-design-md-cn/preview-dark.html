@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>awesome-design-md-cn Preview Dark</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d1016;
+      --panel: rgba(17, 22, 31, 0.92);
+      --card: #131a24;
+      --card-strong: #161e2b;
+      --text: #eef2f8;
+      --muted: rgba(238, 242, 248, 0.68);
+      --quiet: rgba(238, 242, 248, 0.44);
+      --line: rgba(148, 163, 184, 0.18);
+      --accent: #7d96ff;
+      --accent-soft: rgba(125, 150, 255, 0.14);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(125, 150, 255, 0.16), transparent 30%),
+        var(--bg);
+      color: var(--text);
+    }
+    .shell {
+      width: min(1200px, calc(100% - 32px));
+      margin: 24px auto 40px;
+    }
+    .hero,
+    .panel,
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+    .hero {
+      padding: 32px;
+      background:
+        radial-gradient(circle at 84% 20%, rgba(125, 150, 255, 0.22), transparent 24%),
+        linear-gradient(180deg, rgba(20, 28, 40, 0.96), rgba(12, 16, 22, 0.98));
+    }
+    .eyebrow,
+    .label,
+    .kicker {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--quiet);
+    }
+    h1 {
+      margin: 18px 0 10px;
+      font-size: clamp(36px, 5vw, 54px);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+    }
+    h2 {
+      margin: 10px 0 6px;
+      font-size: 22px;
+      line-height: 1.06;
+      letter-spacing: -0.04em;
+    }
+    h3 {
+      margin: 10px 0 3px;
+      font-size: 18px;
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+    .actions,
+    .chips,
+    .grid,
+    .meta,
+    .card-actions,
+    .layout {
+      display: grid;
+      gap: 12px;
+    }
+    .actions {
+      grid-auto-flow: column;
+      justify-content: start;
+      margin-top: 22px;
+    }
+    .button,
+    .chip,
+    .pill,
+    .count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      padding: 0 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--text);
+      font-size: 12px;
+    }
+    .button.primary,
+    .chip.active,
+    .pill.accent {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: rgba(125, 150, 255, 0.28);
+    }
+    .layout {
+      grid-template-columns: 280px minmax(0, 1fr);
+      align-items: start;
+      margin-top: 20px;
+    }
+    .panel {
+      padding: 18px;
+      background: var(--panel);
+    }
+    .search {
+      width: 100%;
+      height: 42px;
+      margin-top: 16px;
+      padding: 0 14px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+      font: inherit;
+    }
+    .section + .section { margin-top: 18px; }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: start;
+      margin-bottom: 14px;
+    }
+    .grid.featured { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid.library { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .card {
+      padding: 15px;
+      background: var(--card);
+    }
+    .card.custom,
+    .card.featured {
+      background: linear-gradient(180deg, rgba(125, 150, 255, 0.06), rgba(125, 150, 255, 0)), var(--card-strong);
+    }
+    .sub { font-size: 12px; color: var(--quiet); }
+    .meta,
+    .card-actions {
+      grid-auto-flow: column;
+      justify-content: start;
+      margin-top: 12px;
+    }
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      .grid.featured,
+      .grid.library { grid-template-columns: 1fr; }
+      .actions,
+      .meta,
+      .card-actions { grid-auto-flow: row; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">Custom Case</div>
+      <h1>中文资源库，也可以有自己的 DESIGN.md。</h1>
+      <p>深色版本保留相同的低疲劳结构逻辑：一个稳定的筛选区、一个清晰的内容区，以及不抢眼的交互强调。</p>
+      <div class="actions">
+        <span class="button primary">查看案例</span>
+        <span class="button">复制提示词</span>
+      </div>
+    </section>
+
+    <section class="layout">
+      <aside class="panel">
+        <div class="label">Filters</div>
+        <h2>筛选器</h2>
+        <p>深色模式下仍然保持弱边框与单一强调色，不把筛选区做成控制台面板。</p>
+        <input class="search" value="本站风格 / 资源库" aria-label="搜索">
+        <div class="chips">
+          <span class="chip active">自定义案例</span>
+          <span class="chip">参考案例</span>
+          <span class="chip">工具聚合页</span>
+        </div>
+      </aside>
+
+      <div>
+        <section class="panel section">
+          <div class="section-head">
+            <div>
+              <div class="label">Custom</div>
+              <h2>自定义案例</h2>
+            </div>
+            <span class="count">1</span>
+          </div>
+          <article class="card custom">
+            <div class="kicker">System</div>
+            <h3>本站风格</h3>
+            <div class="sub">awesome-design-md-cn</div>
+            <p>深色模式下的资源库风格，依旧强调紧凑目录卡片、稳定层级和单一冷蓝色交互反馈。</p>
+            <div class="meta">
+              <span class="pill accent">自定义案例</span>
+              <span class="pill">设计资源库</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="panel section">
+          <div class="section-head">
+            <div>
+              <div class="label">Reference</div>
+              <h2>参考案例</h2>
+            </div>
+            <span class="count">58</span>
+          </div>
+          <div class="grid library">
+            <article class="card">
+              <div class="kicker">System</div>
+              <h3>Figma</h3>
+              <div class="sub">Figma</div>
+              <p>黑白界面层和彩色内容层分离，适合作为工具站视觉控制的参考。</p>
+            </article>
+            <article class="card">
+              <div class="kicker">System</div>
+              <h3>Notion</h3>
+              <div class="sub">Notion</div>
+              <p>柔和、安静、编辑式，适合内容型系统与文档工作台。</p>
+            </article>
+            <article class="card">
+              <div class="kicker">System</div>
+              <h3>Vercel</h3>
+              <div class="sub">Vercel</div>
+              <p>精确克制、黑白优先，适合开发工具和文档站。</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
