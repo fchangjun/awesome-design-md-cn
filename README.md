@@ -37,6 +37,16 @@
 - 原项目仓库：[VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)
 - 原项目 README：[README.md](https://github.com/VoltAgent/awesome-design-md/blob/main/README.md)
 
+## 更新日志
+
+### 2026-05-20
+
+- 同步上游新增的 `13` 个参考案例：Binance、BMW M、Bugatti、Mastercard、Meta、Nike、PlayStation、Shopify、Slack、Starbucks、The Verge、Vodafone、WIRED。
+- 为新增案例补齐中文详情页、README 入口、`DESIGN.md` 路径和明暗预览页。
+- 对上游缺失预览界面的新增案例，按本仓库已有 preview catalog 规则生成本地预览页，覆盖颜色、排版、按钮、卡片、表单、间距、圆角和层级展示。
+- 首页列表卡片增加同步日期标识；旧案例保留本地最后修改日期，只有本次新增案例显示 `2026-05-20`。
+- 新增 `AGENTS.md` 同步规则，要求后续同步时补齐预览页并维护 README 更新日志。
+
 ## 什么是 DESIGN.md？
 
 [DESIGN.md](https://stitch.withgoogle.com/docs/design-md/overview/) 是 Google Stitch 提出的一个新概念。

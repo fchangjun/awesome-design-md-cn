@@ -7,8 +7,9 @@
 ## 同步规则
 
 - 使用 `scripts/sync-source.mjs` 从上游同步案例，并生成 `data/designs.json`、`data/designs.js` 和 `designs/*/index.html`。
-- 每次同步必须写入本地同步日期字段 `updatedAt`，日期使用执行同步时的本地日期，而不是上游提交时间。
-- 首页列表卡片必须在卡片顶部显式显示 `updatedAt`，格式为 `更新于 YYYY-MM-DD`，用于区分内容同步批次。
+- 每次同步必须写入本地同步日期字段 `updatedAt`。新增或实际同步的案例使用执行同步时的本地日期；已有且未更新的案例保留本地最后修改日期，不能批量改成当天。
+- 首页列表卡片必须在卡片顶部显式显示 `updatedAt`，格式为 `同步 YYYY-MM-DD`，用于区分内容同步批次。
+- 每次同步必须更新 `README.md` 的“更新日志”，记录同步日期、新增案例、预览页补齐、列表页或数据结构变化；不能只更新收录列表。
 - 新增上游案例时，必须同时保证以下文件存在：
   - `design-md/<slug>/DESIGN.md`
   - `design-md/<slug>/README.md`
