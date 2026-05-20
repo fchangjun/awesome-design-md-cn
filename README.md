@@ -14,7 +14,7 @@
 <div align="center">
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![DESIGN.md Count](https://img.shields.io/badge/DESIGN.md%20count-59-10b981?style=classic)
+![DESIGN.md Count](https://img.shields.io/badge/DESIGN.md%20count-72-10b981?style=classic)
 [![Last Update](https://img.shields.io/github/last-commit/fchangjun/awesome-design-md-cn?label=Last%20update&style=classic)](https://github.com/fchangjun/awesome-design-md-cn)
 
 </div>
@@ -27,13 +27,13 @@
 
 目前仓库包含：
 
-- `58` 个参考案例：来自原项目收录的公开网站风格参考
+- `71` 个参考案例：来自原项目收录的公开网站风格参考
 - `1` 个自定义案例：`awesome-design-md-cn` 自己沉淀出的资源库设计语言
 
 ## 快速入口
 
 - 在线预览：[fchangjun.github.io/awesome-design-md-cn](https://fchangjun.github.io/awesome-design-md-cn/)
-- 使用指南：[guide.html](/Users/baba/Desktop/GitHub/awesome-design-md-cn/guide.html)
+- 使用指南：[guide.html](guide.html)
 - 原项目仓库：[VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)
 - 原项目 README：[README.md](https://github.com/VoltAgent/awesome-design-md/blob/main/README.md)
 
@@ -155,12 +155,15 @@ Markdown 也是 LLM 最擅长读取的格式，所以没有额外解析和配置
 - [**Miro**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/miro/) - 视觉协作工具。亮黄色点缀，无限画布气质
 - [**Notion**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/notion/) - 一体化工作空间。温和极简、衬线标题、柔和表面
 - [**Pinterest**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/pinterest/) - 图片发现平台。红色强调、瀑布流、图片优先
+- [**Slack**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/slack/) - 团队协作消息工具。紫色品牌底、柔和渐变首屏、产品界面组合展示
 - [**Webflow**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/webflow/) - 可视化建站。蓝色点缀、 polished marketing site 风格
 
 ### 金融科技与加密
 
+- [**Binance**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/binance/) - 加密交易平台。黑黄高对比、交易数据紧迫感、深色金融界面
 - [**Coinbase**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/coinbase/) - 加密交易所。干净蓝色识别，强调可信与机构感
 - [**Kraken**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/kraken/) - 加密交易平台。紫色深色界面，数据密集型 dashboard
+- [**Mastercard**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/mastercard/) - 全球支付网络。暖米色画布、胶囊圆角、圆形轨道叙事
 - [**Revolut**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/revolut/) - 数字银行。精致深色界面，渐变卡片，金融科技精确感
 - [**Wise**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/wise/) - 国际转账。明亮绿色点缀，清晰且友好
 
@@ -169,14 +172,24 @@ Markdown 也是 LLM 最擅长读取的格式，所以没有额外解析和配置
 - [**Airbnb**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/airbnb/) - 旅行平台。暖珊瑚色点缀，强摄影感，圆润 UI
 - [**Apple**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/apple/) - 消费电子。高级留白，SF Pro，电影感视觉
 - [**IBM**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/ibm/) - 企业技术品牌。Carbon 设计系统，结构化蓝色体系
+- [**Meta**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/meta/) - 消费硬件商店。摄影优先、黑白双 CTA、Meta 蓝购买动作
+- [**Nike**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/nike/) - 运动零售品牌。黑白高对比、超大写标题、全幅运动摄影
 - [**NVIDIA**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/nvidia/) - GPU 计算。绿色与黑色能量感，技术力量气质
+- [**PlayStation**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/playstation/) - 游戏主机零售与内容平台。蓝色 CTA、三段式明暗画布、游戏视觉主导
+- [**Shopify**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/shopify/) - 电商平台。深色电影感营销与浅色交易界面并行，绿色商业强调
 - [**SpaceX**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/spacex/) - 航天科技。黑白强对比，全幅影像，未来感
 - [**Spotify**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/spotify/) - 音乐流媒体。深色底上的高亮绿色，大胆排版
+- [**Starbucks**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/starbucks/) - 咖啡零售品牌。暖奶油底、四层绿色系统、圆润门店标识感
+- [**The Verge**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/theverge/) - 科技媒体。近黑编辑画布、酸性薄荷与紫色强调、杂志化高密度信息流
 - [**Uber**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/uber/) - 出行平台。粗黑白对比、紧凑字距、都市感强
+- [**Vodafone**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/vodafone/) - 全球电信品牌。沃达丰红 CTA、巨大大写标题、影像分段叙事
+- [**WIRED**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/wired/) - 科技杂志。纸白编辑版式、黑色字标、窄高衬线标题与高密度文章排版
 
 ### 汽车品牌
 
 - [**BMW**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/bmw/) - 豪华汽车品牌。深色高级表面，精确的德系工程感
+- [**BMW M**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/bmw-m/) - BMW 高性能子品牌。赛车运动三色强调、黑底摄影、工程感排版
+- [**Bugatti**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/bugatti/) - 超豪华跑车品牌。纯黑电影感、克制单色、纪念碑式大标题
 - [**Ferrari**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/ferrari/) - 豪华汽车品牌。黑白编辑感极强，法拉利红极少量点缀
 - [**Lamborghini**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/lamborghini/) - 豪华汽车品牌。纯黑舞台感、金色强调、张力极强
 - [**Renault**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/renault/) - 法国汽车品牌。高能渐变、几何秩序、现代车展感
@@ -184,7 +197,7 @@ Markdown 也是 LLM 最擅长读取的格式，所以没有额外解析和配置
 
 ## 本地使用
 
-直接打开 [index.html](/Users/baba/Desktop/GitHub/awesome-design-md-cn/index.html) 即可预览。
+直接打开 [index.html](index.html) 即可预览。
 
 重新同步源仓库内容：
 
@@ -200,18 +213,18 @@ node scripts/sync-source.mjs /path/to/awesome-design-md
 
 ## 目录结构
 
-- [index.html](/Users/baba/Desktop/GitHub/awesome-design-md-cn/index.html): 中文首页
-- [guide.html](/Users/baba/Desktop/GitHub/awesome-design-md-cn/guide.html): 使用指南
-- [data/designs.json](/Users/baba/Desktop/GitHub/awesome-design-md-cn/data/designs.json): 结构化数据
-- [design-md](/Users/baba/Desktop/GitHub/awesome-design-md-cn/design-md): 同步的原始设计资产
-- [designs](/Users/baba/Desktop/GitHub/awesome-design-md-cn/designs): 自动生成的详情页
-- [scripts/sync-source.mjs](/Users/baba/Desktop/GitHub/awesome-design-md-cn/scripts/sync-source.mjs): 同步与生成脚本
-- [docs/PROJECT_PLAN.md](/Users/baba/Desktop/GitHub/awesome-design-md-cn/docs/PROJECT_PLAN.md): 项目规划与后续待办
+- [index.html](index.html): 中文首页
+- [guide.html](guide.html): 使用指南
+- [data/designs.json](data/designs.json): 结构化数据
+- [design-md](design-md): 同步的原始设计资产
+- [designs](designs): 自动生成的详情页
+- [scripts/sync-source.mjs](scripts/sync-source.mjs): 同步与生成脚本
+- [docs/PROJECT_PLAN.md](docs/PROJECT_PLAN.md): 项目规划与后续待办
 
 ## 部署
 
 仓库包含 GitHub Pages 工作流：
-[.github/workflows/deploy-pages.yml](/Users/baba/Desktop/GitHub/awesome-design-md-cn/.github/workflows/deploy-pages.yml)
+[.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml)
 
 ## 致敬与引用
 

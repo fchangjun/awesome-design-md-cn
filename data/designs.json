@@ -36,6 +36,7 @@
     "previewDark": "design-md/awesome-design-md-cn/preview-dark.html",
     "readmePath": "design-md/awesome-design-md-cn/README.md",
     "designPath": "design-md/awesome-design-md-cn/DESIGN.md",
+    "updatedAt": "2026-04-08",
     "positioningZh": "用于高密度内容浏览的中文科技风资源库，强调低疲劳、清晰筛选和稳定层级。",
     "bestFor": [
       "设计资源库",
@@ -90,6 +91,7 @@
     "aliases": [
       "airbnb",
       "爱彼迎",
+      "Airbnb",
       "民宿",
       "旅行"
     ],
@@ -102,6 +104,7 @@
     "previewDark": "design-md/airbnb/preview-dark.html",
     "readmePath": "design-md/airbnb/README.md",
     "designPath": "design-md/airbnb/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
     "bestFor": [
       "品牌官网",
@@ -129,8 +132,8 @@
         "nameZh": "宝马"
       },
       {
-        "slug": "ferrari",
-        "nameZh": "法拉利"
+        "slug": "bmw-m",
+        "nameZh": "BMW M"
       }
     ]
   },
@@ -168,6 +171,7 @@
     "previewDark": "design-md/airtable/preview-dark.html",
     "readmePath": "design-md/airtable/README.md",
     "designPath": "design-md/airtable/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "重视结构清晰、可读性和文档感，适合开发者和 B 端产品。",
     "bestFor": [
       "开发者官网",
@@ -221,6 +225,7 @@
     "aliases": [
       "apple",
       "苹果",
+      "Apple",
       "科技",
       "高端"
     ],
@@ -233,6 +238,7 @@
     "previewDark": "design-md/apple/preview-dark.html",
     "readmePath": "design-md/apple/README.md",
     "designPath": "design-md/apple/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
     "bestFor": [
       "品牌官网",
@@ -259,8 +265,79 @@
         "nameZh": "宝马"
       },
       {
-        "slug": "ferrari",
-        "nameZh": "法拉利"
+        "slug": "bmw-m",
+        "nameZh": "BMW M"
+      }
+    ]
+  },
+  {
+    "slug": "binance",
+    "name": "binance",
+    "displayName": "Binance",
+    "nameZh": "币安",
+    "group": "reference",
+    "summaryZh": "加密交易平台。黑黄高对比、交易数据紧迫感、深色金融界面。",
+    "category": "金融科技",
+    "tagsZh": [
+      "金融",
+      "加密",
+      "交易",
+      "深色"
+    ],
+    "styleKeywords": [
+      "Binance Yellow",
+      "黑黄高对比",
+      "交易数据",
+      "深色金融"
+    ],
+    "aliases": [
+      "binance",
+      "币安",
+      "Binance",
+      "金融",
+      "加密",
+      "交易",
+      "深色"
+    ],
+    "useCases": [
+      "官网落地页",
+      "交易产品页",
+      "数据控制台"
+    ],
+    "previewLight": "design-md/binance/preview.html",
+    "previewDark": "design-md/binance/preview-dark.html",
+    "readmePath": "design-md/binance/README.md",
+    "designPath": "design-md/binance/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调专业、可信和精致的信息表达，适合价格、数据和支付流程较多的页面。",
+    "bestFor": [
+      "官网落地页",
+      "交易产品页",
+      "数据控制台",
+      "支付产品页"
+    ],
+    "avoidFor": [
+      "轻社交内容页",
+      "卡通化活动页"
+    ],
+    "aiChecklist": [
+      "强化数据和价格的对齐感",
+      "避免装饰元素影响可信度",
+      "CTA 要明确且节制"
+    ],
+    "recommendedPromptZh": "参考 币安 / Binance 的视觉语言，设计一个中文 官网落地页，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "coinbase",
+        "nameZh": "Coinbase"
+      },
+      {
+        "slug": "kraken",
+        "nameZh": "Kraken"
+      },
+      {
+        "slug": "mastercard",
+        "nameZh": "万事达卡"
       }
     ]
   },
@@ -285,6 +362,7 @@
     "aliases": [
       "bmw",
       "宝马",
+      "BMW",
       "汽车",
       "豪华"
     ],
@@ -297,6 +375,7 @@
     "previewDark": "design-md/bmw/preview-dark.html",
     "readmePath": "design-md/bmw/README.md",
     "designPath": "design-md/bmw/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
     "bestFor": [
       "品牌官网",
@@ -323,8 +402,150 @@
         "nameZh": "苹果"
       },
       {
-        "slug": "ferrari",
-        "nameZh": "法拉利"
+        "slug": "bmw-m",
+        "nameZh": "BMW M"
+      }
+    ]
+  },
+  {
+    "slug": "bmw-m",
+    "name": "bmw-m",
+    "displayName": "BMW M",
+    "nameZh": "BMW M",
+    "group": "reference",
+    "summaryZh": "BMW 高性能子品牌。赛车运动三色强调、黑底摄影、工程感排版。",
+    "category": "品牌官网",
+    "tagsZh": [
+      "汽车",
+      "赛车",
+      "豪华",
+      "性能"
+    ],
+    "styleKeywords": [
+      "M 三色",
+      "黑底摄影",
+      "赛车运动",
+      "工程感"
+    ],
+    "aliases": [
+      "bmw-m",
+      "bmwm",
+      "BMW M",
+      "汽车",
+      "赛车",
+      "豪华",
+      "性能"
+    ],
+    "useCases": [
+      "品牌官网",
+      "营销落地页",
+      "汽车产品页"
+    ],
+    "previewLight": "design-md/bmw-m/preview.html",
+    "previewDark": "design-md/bmw-m/preview-dark.html",
+    "readmePath": "design-md/bmw-m/README.md",
+    "designPath": "design-md/bmw-m/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "营销落地页",
+      "汽车产品页",
+      "企业介绍页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 BMW M / BMW M 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
+      }
+    ]
+  },
+  {
+    "slug": "bugatti",
+    "name": "bugatti",
+    "displayName": "Bugatti",
+    "nameZh": "布加迪",
+    "group": "reference",
+    "summaryZh": "超豪华跑车品牌。纯黑电影感、克制单色、纪念碑式大标题。",
+    "category": "品牌官网",
+    "tagsZh": [
+      "汽车",
+      "豪华",
+      "黑白",
+      "摄影"
+    ],
+    "styleKeywords": [
+      "纯黑画布",
+      "超豪华",
+      "全幅摄影",
+      "纪念碑式标题"
+    ],
+    "aliases": [
+      "bugatti",
+      "布加迪",
+      "Bugatti",
+      "汽车",
+      "豪华",
+      "黑白",
+      "摄影"
+    ],
+    "useCases": [
+      "品牌官网",
+      "营销落地页",
+      "奢侈品产品页"
+    ],
+    "previewLight": "design-md/bugatti/preview.html",
+    "previewDark": "design-md/bugatti/preview-dark.html",
+    "readmePath": "design-md/bugatti/README.md",
+    "designPath": "design-md/bugatti/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "营销落地页",
+      "奢侈品产品页",
+      "企业介绍页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 布加迪 / Bugatti 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
       }
     ]
   },
@@ -361,6 +582,7 @@
     "previewDark": "design-md/cal/preview-dark.html",
     "readmePath": "design-md/cal/README.md",
     "designPath": "design-md/cal/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调秩序感、工作流和信息组织，适合 SaaS 和工作台场景。",
     "bestFor": [
       "SaaS 后台",
@@ -427,6 +649,7 @@
     "previewDark": "design-md/claude/preview-dark.html",
     "readmePath": "design-md/claude/README.md",
     "designPath": "design-md/claude/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -492,6 +715,7 @@
     "previewDark": "design-md/clay/preview-dark.html",
     "readmePath": "design-md/clay/README.md",
     "designPath": "design-md/clay/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "适合做通用参考，先看预览再决定是否采纳。",
     "bestFor": [
       "产品官网",
@@ -555,6 +779,7 @@
     "previewDark": "design-md/clickhouse/preview-dark.html",
     "readmePath": "design-md/clickhouse/README.md",
     "designPath": "design-md/clickhouse/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "重视结构清晰、可读性和文档感，适合开发者和 B 端产品。",
     "bestFor": [
       "开发者官网",
@@ -620,6 +845,7 @@
     "previewDark": "design-md/cohere/preview-dark.html",
     "readmePath": "design-md/cohere/README.md",
     "designPath": "design-md/cohere/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -685,6 +911,7 @@
     "previewDark": "design-md/coinbase/preview-dark.html",
     "readmePath": "design-md/coinbase/README.md",
     "designPath": "design-md/coinbase/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调专业、可信和精致的信息表达，适合价格、数据和支付流程较多的页面。",
     "bestFor": [
       "官网落地页",
@@ -704,16 +931,16 @@
     "recommendedPromptZh": "参考 Coinbase / Coinbase 的视觉语言，设计一个中文 官网落地页，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
     "relatedItems": [
       {
+        "slug": "binance",
+        "nameZh": "币安"
+      },
+      {
         "slug": "kraken",
         "nameZh": "Kraken"
       },
       {
-        "slug": "revolut",
-        "nameZh": "Revolut"
-      },
-      {
-        "slug": "stripe",
-        "nameZh": "Stripe"
+        "slug": "mastercard",
+        "nameZh": "万事达卡"
       }
     ]
   },
@@ -751,6 +978,7 @@
     "previewDark": "design-md/composio/preview-dark.html",
     "readmePath": "design-md/composio/README.md",
     "designPath": "design-md/composio/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "重视结构清晰、可读性和文档感，适合开发者和 B 端产品。",
     "bestFor": [
       "开发者官网",
@@ -815,6 +1043,7 @@
     "previewDark": "design-md/cursor/preview-dark.html",
     "readmePath": "design-md/cursor/README.md",
     "designPath": "design-md/cursor/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -881,6 +1110,7 @@
     "previewDark": "design-md/elevenlabs/preview-dark.html",
     "readmePath": "design-md/elevenlabs/README.md",
     "designPath": "design-md/elevenlabs/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -947,6 +1177,7 @@
     "previewDark": "design-md/expo/preview-dark.html",
     "readmePath": "design-md/expo/README.md",
     "designPath": "design-md/expo/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "重视结构清晰、可读性和文档感，适合开发者和 B 端产品。",
     "bestFor": [
       "开发者官网",
@@ -999,6 +1230,7 @@
     "aliases": [
       "ferrari",
       "法拉利",
+      "Ferrari",
       "汽车",
       "豪华"
     ],
@@ -1011,6 +1243,7 @@
     "previewDark": "design-md/ferrari/preview-dark.html",
     "readmePath": "design-md/ferrari/README.md",
     "designPath": "design-md/ferrari/DESIGN.md",
+    "updatedAt": "2026-04-08",
     "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
     "bestFor": [
       "品牌官网",
@@ -1076,6 +1309,7 @@
     "previewDark": "design-md/figma/preview-dark.html",
     "readmePath": "design-md/figma/README.md",
     "designPath": "design-md/figma/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调秩序感、工作流和信息组织，适合 SaaS 和工作台场景。",
     "bestFor": [
       "SaaS 后台",
@@ -1141,6 +1375,7 @@
     "previewDark": "design-md/framer/preview-dark.html",
     "readmePath": "design-md/framer/README.md",
     "designPath": "design-md/framer/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调模块化展示和模板感，适合展示产品能力、模板和编辑体验。",
     "bestFor": [
       "产品官网",
@@ -1162,6 +1397,10 @@
       {
         "slug": "sanity",
         "nameZh": "Sanity"
+      },
+      {
+        "slug": "shopify",
+        "nameZh": "Shopify"
       },
       {
         "slug": "webflow",
@@ -1202,6 +1441,7 @@
     "previewDark": "design-md/hashicorp/preview-dark.html",
     "readmePath": "design-md/hashicorp/README.md",
     "designPath": "design-md/hashicorp/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "重视结构清晰、可读性和文档感，适合开发者和 B 端产品。",
     "bestFor": [
       "开发者官网",
@@ -1266,6 +1506,7 @@
     "previewDark": "design-md/ibm/preview-dark.html",
     "readmePath": "design-md/ibm/README.md",
     "designPath": "design-md/ibm/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
     "bestFor": [
       "品牌官网",
@@ -1330,6 +1571,7 @@
     "previewDark": "design-md/intercom/preview-dark.html",
     "readmePath": "design-md/intercom/README.md",
     "designPath": "design-md/intercom/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "适合做通用参考，先看预览再决定是否采纳。",
     "bestFor": [
       "产品官网",
@@ -1393,6 +1635,7 @@
     "previewDark": "design-md/kraken/preview-dark.html",
     "readmePath": "design-md/kraken/README.md",
     "designPath": "design-md/kraken/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调专业、可信和精致的信息表达，适合价格、数据和支付流程较多的页面。",
     "bestFor": [
       "官网落地页",
@@ -1412,16 +1655,16 @@
     "recommendedPromptZh": "参考 Kraken / Kraken 的视觉语言，设计一个中文 官网落地页，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
     "relatedItems": [
       {
+        "slug": "binance",
+        "nameZh": "币安"
+      },
+      {
         "slug": "coinbase",
         "nameZh": "Coinbase"
       },
       {
-        "slug": "revolut",
-        "nameZh": "Revolut"
-      },
-      {
-        "slug": "stripe",
-        "nameZh": "Stripe"
+        "slug": "mastercard",
+        "nameZh": "万事达卡"
       }
     ]
   },
@@ -1446,6 +1689,7 @@
     "aliases": [
       "lamborghini",
       "兰博基尼",
+      "Lamborghini",
       "汽车",
       "豪华"
     ],
@@ -1458,6 +1702,7 @@
     "previewDark": "design-md/lamborghini/preview-dark.html",
     "readmePath": "design-md/lamborghini/README.md",
     "designPath": "design-md/lamborghini/DESIGN.md",
+    "updatedAt": "2026-04-08",
     "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
     "bestFor": [
       "品牌官网",
@@ -1523,6 +1768,7 @@
     "previewDark": "design-md/linear.app/preview-dark.html",
     "readmePath": "design-md/linear.app/README.md",
     "designPath": "design-md/linear.app/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调秩序感、工作流和信息组织，适合 SaaS 和工作台场景。",
     "bestFor": [
       "SaaS 后台",
@@ -1588,6 +1834,7 @@
     "previewDark": "design-md/lovable/preview-dark.html",
     "readmePath": "design-md/lovable/README.md",
     "designPath": "design-md/lovable/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -1617,6 +1864,147 @@
       {
         "slug": "cursor",
         "nameZh": "Cursor"
+      }
+    ]
+  },
+  {
+    "slug": "mastercard",
+    "name": "mastercard",
+    "displayName": "Mastercard",
+    "nameZh": "万事达卡",
+    "group": "reference",
+    "summaryZh": "全球支付网络。暖米色画布、胶囊圆角、圆形轨道叙事。",
+    "category": "金融科技",
+    "tagsZh": [
+      "金融",
+      "支付",
+      "品牌",
+      "圆角"
+    ],
+    "styleKeywords": [
+      "暖米色",
+      "胶囊圆角",
+      "圆形轨道",
+      "编辑感"
+    ],
+    "aliases": [
+      "mastercard",
+      "万事达卡",
+      "Mastercard",
+      "金融",
+      "支付",
+      "品牌",
+      "圆角"
+    ],
+    "useCases": [
+      "官网落地页",
+      "支付产品页",
+      "品牌页面"
+    ],
+    "previewLight": "design-md/mastercard/preview.html",
+    "previewDark": "design-md/mastercard/preview-dark.html",
+    "readmePath": "design-md/mastercard/README.md",
+    "designPath": "design-md/mastercard/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调专业、可信和精致的信息表达，适合价格、数据和支付流程较多的页面。",
+    "bestFor": [
+      "官网落地页",
+      "支付产品页",
+      "品牌页面",
+      "定价页"
+    ],
+    "avoidFor": [
+      "轻社交内容页",
+      "卡通化活动页"
+    ],
+    "aiChecklist": [
+      "强化数据和价格的对齐感",
+      "避免装饰元素影响可信度",
+      "CTA 要明确且节制"
+    ],
+    "recommendedPromptZh": "参考 万事达卡 / Mastercard 的视觉语言，设计一个中文 官网落地页，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "binance",
+        "nameZh": "币安"
+      },
+      {
+        "slug": "coinbase",
+        "nameZh": "Coinbase"
+      },
+      {
+        "slug": "kraken",
+        "nameZh": "Kraken"
+      }
+    ]
+  },
+  {
+    "slug": "meta",
+    "name": "meta",
+    "displayName": "Meta",
+    "nameZh": "Meta",
+    "group": "reference",
+    "summaryZh": "Meta 消费硬件商店。摄影优先、黑白双 CTA、Meta 蓝购买动作。",
+    "category": "品牌官网",
+    "tagsZh": [
+      "科技",
+      "消费电子",
+      "摄影",
+      "电商"
+    ],
+    "styleKeywords": [
+      "摄影优先",
+      "Meta Blue",
+      "产品卡片",
+      "双 CTA"
+    ],
+    "aliases": [
+      "meta",
+      "Meta",
+      "科技",
+      "消费电子",
+      "摄影",
+      "电商"
+    ],
+    "useCases": [
+      "品牌官网",
+      "产品详情页",
+      "电商商品页"
+    ],
+    "previewLight": "design-md/meta/preview.html",
+    "previewDark": "design-md/meta/preview-dark.html",
+    "readmePath": "design-md/meta/README.md",
+    "designPath": "design-md/meta/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "产品详情页",
+      "电商商品页",
+      "营销落地页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 Meta / Meta 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
       }
     ]
   },
@@ -1653,6 +2041,7 @@
     "previewDark": "design-md/minimax/preview-dark.html",
     "readmePath": "design-md/minimax/README.md",
     "designPath": "design-md/minimax/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -1718,6 +2107,7 @@
     "previewDark": "design-md/mintlify/preview-dark.html",
     "readmePath": "design-md/mintlify/README.md",
     "designPath": "design-md/mintlify/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "重视结构清晰、可读性和文档感，适合开发者和 B 端产品。",
     "bestFor": [
       "开发者官网",
@@ -1782,6 +2172,7 @@
     "previewDark": "design-md/miro/preview-dark.html",
     "readmePath": "design-md/miro/README.md",
     "designPath": "design-md/miro/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调秩序感、工作流和信息组织，适合 SaaS 和工作台场景。",
     "bestFor": [
       "SaaS 后台",
@@ -1836,6 +2227,7 @@
       "mistral.ai",
       "mistralai",
       "Mistral",
+      "Mistral AI",
       "AI",
       "国际"
     ],
@@ -1848,6 +2240,7 @@
     "previewDark": "design-md/mistral.ai/preview-dark.html",
     "readmePath": "design-md/mistral.ai/README.md",
     "designPath": "design-md/mistral.ai/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -1913,6 +2306,7 @@
     "previewDark": "design-md/mongodb/preview-dark.html",
     "readmePath": "design-md/mongodb/README.md",
     "designPath": "design-md/mongodb/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "重视结构清晰、可读性和文档感，适合开发者和 B 端产品。",
     "bestFor": [
       "开发者官网",
@@ -1941,6 +2335,76 @@
       {
         "slug": "composio",
         "nameZh": "Composio"
+      }
+    ]
+  },
+  {
+    "slug": "nike",
+    "name": "nike",
+    "displayName": "Nike",
+    "nameZh": "Nike",
+    "group": "reference",
+    "summaryZh": "运动零售品牌。黑白高对比、超大写标题、全幅运动摄影。",
+    "category": "品牌官网",
+    "tagsZh": [
+      "运动",
+      "零售",
+      "品牌",
+      "摄影"
+    ],
+    "styleKeywords": [
+      "黑白高对比",
+      "超大写标题",
+      "运动摄影",
+      "零售卡片"
+    ],
+    "aliases": [
+      "nike",
+      "Nike",
+      "运动",
+      "零售",
+      "品牌",
+      "摄影"
+    ],
+    "useCases": [
+      "品牌官网",
+      "营销落地页",
+      "电商商品页"
+    ],
+    "previewLight": "design-md/nike/preview.html",
+    "previewDark": "design-md/nike/preview-dark.html",
+    "readmePath": "design-md/nike/README.md",
+    "designPath": "design-md/nike/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "营销落地页",
+      "电商商品页",
+      "企业介绍页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 Nike / Nike 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
       }
     ]
   },
@@ -1977,6 +2441,7 @@
     "previewDark": "design-md/notion/preview-dark.html",
     "readmePath": "design-md/notion/README.md",
     "designPath": "design-md/notion/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调秩序感、工作流和信息组织，适合 SaaS 和工作台场景。",
     "bestFor": [
       "SaaS 后台",
@@ -2031,6 +2496,7 @@
     "aliases": [
       "nvidia",
       "英伟达",
+      "NVIDIA",
       "芯片",
       "科技"
     ],
@@ -2043,6 +2509,7 @@
     "previewDark": "design-md/nvidia/preview-dark.html",
     "readmePath": "design-md/nvidia/README.md",
     "designPath": "design-md/nvidia/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
     "bestFor": [
       "品牌官网",
@@ -2107,6 +2574,7 @@
     "previewDark": "design-md/ollama/preview-dark.html",
     "readmePath": "design-md/ollama/README.md",
     "designPath": "design-md/ollama/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -2173,6 +2641,7 @@
     "previewDark": "design-md/opencode.ai/preview-dark.html",
     "readmePath": "design-md/opencode.ai/README.md",
     "designPath": "design-md/opencode.ai/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -2238,6 +2707,7 @@
     "previewDark": "design-md/pinterest/preview-dark.html",
     "readmePath": "design-md/pinterest/README.md",
     "designPath": "design-md/pinterest/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调流动感、内容展示效率和活跃度，适合内容消费和社区产品。",
     "bestFor": [
       "内容社区",
@@ -2256,8 +2726,86 @@
     "recommendedPromptZh": "参考 Pinterest / Pinterest 的视觉语言，设计一个中文 内容社区，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
     "relatedItems": [
       {
+        "slug": "playstation",
+        "nameZh": "PlayStation"
+      },
+      {
         "slug": "spotify",
         "nameZh": "Spotify"
+      },
+      {
+        "slug": "theverge",
+        "nameZh": "The Verge"
+      }
+    ]
+  },
+  {
+    "slug": "playstation",
+    "name": "playstation",
+    "displayName": "PlayStation",
+    "nameZh": "PlayStation",
+    "group": "reference",
+    "summaryZh": "游戏主机零售与内容平台。蓝色 CTA、三段式明暗画布、游戏视觉主导。",
+    "category": "内容平台",
+    "tagsZh": [
+      "游戏",
+      "消费科技",
+      "内容",
+      "电商"
+    ],
+    "styleKeywords": [
+      "PlayStation Blue",
+      "明暗分段",
+      "游戏视觉",
+      "胶囊 CTA"
+    ],
+    "aliases": [
+      "playstation",
+      "PlayStation",
+      "游戏",
+      "消费科技",
+      "内容",
+      "电商"
+    ],
+    "useCases": [
+      "内容社区",
+      "活动专题页",
+      "产品介绍页"
+    ],
+    "previewLight": "design-md/playstation/preview.html",
+    "previewDark": "design-md/playstation/preview-dark.html",
+    "readmePath": "design-md/playstation/README.md",
+    "designPath": "design-md/playstation/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调流动感、内容展示效率和活跃度，适合内容消费和社区产品。",
+    "bestFor": [
+      "内容社区",
+      "活动专题页",
+      "产品介绍页",
+      "推荐流页面"
+    ],
+    "avoidFor": [
+      "表单密集型后台",
+      "高度理性的文档站"
+    ],
+    "aiChecklist": [
+      "优先突出封面和内容卡片",
+      "降低单屏信息负担",
+      "避免全部模块同质化"
+    ],
+    "recommendedPromptZh": "参考 PlayStation / PlayStation 的视觉语言，设计一个中文 内容社区，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "pinterest",
+        "nameZh": "Pinterest"
+      },
+      {
+        "slug": "spotify",
+        "nameZh": "Spotify"
+      },
+      {
+        "slug": "theverge",
+        "nameZh": "The Verge"
       }
     ]
   },
@@ -2294,6 +2842,7 @@
     "previewDark": "design-md/posthog/preview-dark.html",
     "readmePath": "design-md/posthog/README.md",
     "designPath": "design-md/posthog/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "适合做通用参考，先看预览再决定是否采纳。",
     "bestFor": [
       "产品官网",
@@ -2357,6 +2906,7 @@
     "previewDark": "design-md/raycast/preview-dark.html",
     "readmePath": "design-md/raycast/README.md",
     "designPath": "design-md/raycast/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调秩序感、工作流和信息组织，适合 SaaS 和工作台场景。",
     "bestFor": [
       "SaaS 后台",
@@ -2410,6 +2960,7 @@
     "aliases": [
       "renault",
       "雷诺",
+      "Renault",
       "汽车",
       "品牌"
     ],
@@ -2422,6 +2973,7 @@
     "previewDark": "design-md/renault/preview-dark.html",
     "readmePath": "design-md/renault/README.md",
     "designPath": "design-md/renault/DESIGN.md",
+    "updatedAt": "2026-04-08",
     "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
     "bestFor": [
       "品牌官网",
@@ -2486,6 +3038,7 @@
     "previewDark": "design-md/replicate/preview-dark.html",
     "readmePath": "design-md/replicate/README.md",
     "designPath": "design-md/replicate/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -2551,6 +3104,7 @@
     "previewDark": "design-md/resend/preview-dark.html",
     "readmePath": "design-md/resend/README.md",
     "designPath": "design-md/resend/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "重视结构清晰、可读性和文档感，适合开发者和 B 端产品。",
     "bestFor": [
       "开发者官网",
@@ -2615,6 +3169,7 @@
     "previewDark": "design-md/revolut/preview-dark.html",
     "readmePath": "design-md/revolut/README.md",
     "designPath": "design-md/revolut/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调专业、可信和精致的信息表达，适合价格、数据和支付流程较多的页面。",
     "bestFor": [
       "官网落地页",
@@ -2634,16 +3189,16 @@
     "recommendedPromptZh": "参考 Revolut / Revolut 的视觉语言，设计一个中文 官网落地页，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
     "relatedItems": [
       {
+        "slug": "binance",
+        "nameZh": "币安"
+      },
+      {
         "slug": "coinbase",
         "nameZh": "Coinbase"
       },
       {
         "slug": "kraken",
         "nameZh": "Kraken"
-      },
-      {
-        "slug": "stripe",
-        "nameZh": "Stripe"
       }
     ]
   },
@@ -2680,6 +3235,7 @@
     "previewDark": "design-md/runwayml/preview-dark.html",
     "readmePath": "design-md/runwayml/README.md",
     "designPath": "design-md/runwayml/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -2745,6 +3301,7 @@
     "previewDark": "design-md/sanity/preview-dark.html",
     "readmePath": "design-md/sanity/README.md",
     "designPath": "design-md/sanity/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调模块化展示和模板感，适合展示产品能力、模板和编辑体验。",
     "bestFor": [
       "产品官网",
@@ -2766,6 +3323,10 @@
       {
         "slug": "framer",
         "nameZh": "Framer"
+      },
+      {
+        "slug": "shopify",
+        "nameZh": "Shopify"
       },
       {
         "slug": "webflow",
@@ -2806,6 +3367,7 @@
     "previewDark": "design-md/sentry/preview-dark.html",
     "readmePath": "design-md/sentry/README.md",
     "designPath": "design-md/sentry/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "重视结构清晰、可读性和文档感，适合开发者和 B 端产品。",
     "bestFor": [
       "开发者官网",
@@ -2834,6 +3396,146 @@
       {
         "slug": "composio",
         "nameZh": "Composio"
+      }
+    ]
+  },
+  {
+    "slug": "shopify",
+    "name": "shopify",
+    "displayName": "Shopify",
+    "nameZh": "Shopify",
+    "group": "reference",
+    "summaryZh": "电商平台。深色电影感营销与浅色交易界面并行，绿色商业强调。",
+    "category": "内容与建站",
+    "tagsZh": [
+      "电商",
+      "建站",
+      "商业",
+      "绿色"
+    ],
+    "styleKeywords": [
+      "深色电影感",
+      "商业绿色",
+      "电商平台",
+      "浅色交易界面"
+    ],
+    "aliases": [
+      "shopify",
+      "Shopify",
+      "电商",
+      "建站",
+      "商业",
+      "绿色"
+    ],
+    "useCases": [
+      "产品官网",
+      "模板市场",
+      "编辑器界面"
+    ],
+    "previewLight": "design-md/shopify/preview.html",
+    "previewDark": "design-md/shopify/preview-dark.html",
+    "readmePath": "design-md/shopify/README.md",
+    "designPath": "design-md/shopify/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调模块化展示和模板感，适合展示产品能力、模板和编辑体验。",
+    "bestFor": [
+      "产品官网",
+      "模板市场",
+      "编辑器界面",
+      "建站工具官网"
+    ],
+    "avoidFor": [
+      "金融级数据台",
+      "过于严肃的企业门户"
+    ],
+    "aiChecklist": [
+      "让案例和模板展示更直观",
+      "保留适度视觉变化",
+      "避免区块密度过高"
+    ],
+    "recommendedPromptZh": "参考 Shopify / Shopify 的视觉语言，设计一个中文 产品官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "framer",
+        "nameZh": "Framer"
+      },
+      {
+        "slug": "sanity",
+        "nameZh": "Sanity"
+      },
+      {
+        "slug": "webflow",
+        "nameZh": "Webflow"
+      }
+    ]
+  },
+  {
+    "slug": "slack",
+    "name": "slack",
+    "displayName": "Slack",
+    "nameZh": "Slack",
+    "group": "reference",
+    "summaryZh": "团队协作消息工具。紫色品牌底、柔和渐变首屏、产品界面组合展示。",
+    "category": "效率协作",
+    "tagsZh": [
+      "协作",
+      "消息",
+      "SaaS",
+      "紫色"
+    ],
+    "styleKeywords": [
+      "深紫品牌色",
+      "柔和渐变",
+      "产品界面展示",
+      "胶囊 CTA"
+    ],
+    "aliases": [
+      "slack",
+      "Slack",
+      "协作",
+      "消息",
+      "SaaS",
+      "紫色"
+    ],
+    "useCases": [
+      "SaaS 后台",
+      "工作台",
+      "产品介绍页"
+    ],
+    "previewLight": "design-md/slack/preview.html",
+    "previewDark": "design-md/slack/preview-dark.html",
+    "readmePath": "design-md/slack/README.md",
+    "designPath": "design-md/slack/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调秩序感、工作流和信息组织，适合 SaaS 和工作台场景。",
+    "bestFor": [
+      "SaaS 后台",
+      "工作台",
+      "产品介绍页",
+      "工作台首页"
+    ],
+    "avoidFor": [
+      "纯品牌大片式营销页",
+      "重情绪化视觉实验页面"
+    ],
+    "aiChecklist": [
+      "重视内容块编排",
+      "表单和列表要易扫读",
+      "中文标题长度要控制在稳妥范围"
+    ],
+    "recommendedPromptZh": "参考 Slack / Slack 的视觉语言，设计一个中文 SaaS 后台，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "cal",
+        "nameZh": "Cal"
+      },
+      {
+        "slug": "figma",
+        "nameZh": "Figma"
+      },
+      {
+        "slug": "linear.app",
+        "nameZh": "Linear"
       }
     ]
   },
@@ -2870,6 +3572,7 @@
     "previewDark": "design-md/spacex/preview-dark.html",
     "readmePath": "design-md/spacex/README.md",
     "designPath": "design-md/spacex/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
     "bestFor": [
       "品牌官网",
@@ -2934,6 +3637,7 @@
     "previewDark": "design-md/spotify/preview-dark.html",
     "readmePath": "design-md/spotify/README.md",
     "designPath": "design-md/spotify/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调流动感、内容展示效率和活跃度，适合内容消费和社区产品。",
     "bestFor": [
       "内容社区",
@@ -2954,6 +3658,85 @@
       {
         "slug": "pinterest",
         "nameZh": "Pinterest"
+      },
+      {
+        "slug": "playstation",
+        "nameZh": "PlayStation"
+      },
+      {
+        "slug": "theverge",
+        "nameZh": "The Verge"
+      }
+    ]
+  },
+  {
+    "slug": "starbucks",
+    "name": "starbucks",
+    "displayName": "Starbucks",
+    "nameZh": "星巴克",
+    "group": "reference",
+    "summaryZh": "咖啡零售品牌。暖奶油底、四层绿色系统、圆润门店标识感。",
+    "category": "品牌官网",
+    "tagsZh": [
+      "零售",
+      "咖啡",
+      "品牌",
+      "绿色"
+    ],
+    "styleKeywords": [
+      "暖奶油底",
+      "Starbucks Green",
+      "圆润按钮",
+      "门店标识"
+    ],
+    "aliases": [
+      "starbucks",
+      "星巴克",
+      "Starbucks",
+      "零售",
+      "咖啡",
+      "品牌",
+      "绿色"
+    ],
+    "useCases": [
+      "品牌官网",
+      "营销落地页",
+      "服务介绍页"
+    ],
+    "previewLight": "design-md/starbucks/preview.html",
+    "previewDark": "design-md/starbucks/preview-dark.html",
+    "readmePath": "design-md/starbucks/README.md",
+    "designPath": "design-md/starbucks/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "营销落地页",
+      "服务介绍页",
+      "企业介绍页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 星巴克 / Starbucks 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
       }
     ]
   },
@@ -2990,6 +3773,7 @@
     "previewDark": "design-md/stripe/preview-dark.html",
     "readmePath": "design-md/stripe/README.md",
     "designPath": "design-md/stripe/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调专业、可信和精致的信息表达，适合价格、数据和支付流程较多的页面。",
     "bestFor": [
       "官网落地页",
@@ -3009,16 +3793,16 @@
     "recommendedPromptZh": "参考 Stripe / Stripe 的视觉语言，设计一个中文 官网落地页，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
     "relatedItems": [
       {
+        "slug": "binance",
+        "nameZh": "币安"
+      },
+      {
         "slug": "coinbase",
         "nameZh": "Coinbase"
       },
       {
         "slug": "kraken",
         "nameZh": "Kraken"
-      },
-      {
-        "slug": "revolut",
-        "nameZh": "Revolut"
       }
     ]
   },
@@ -3055,6 +3839,7 @@
     "previewDark": "design-md/supabase/preview-dark.html",
     "readmePath": "design-md/supabase/README.md",
     "designPath": "design-md/supabase/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "重视结构清晰、可读性和文档感，适合开发者和 B 端产品。",
     "bestFor": [
       "开发者官网",
@@ -3119,6 +3904,7 @@
     "previewDark": "design-md/superhuman/preview-dark.html",
     "readmePath": "design-md/superhuman/README.md",
     "designPath": "design-md/superhuman/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "适合做通用参考，先看预览再决定是否采纳。",
     "bestFor": [
       "产品官网",
@@ -3170,6 +3956,7 @@
     "aliases": [
       "tesla",
       "特斯拉",
+      "Tesla",
       "汽车",
       "科技"
     ],
@@ -3182,6 +3969,7 @@
     "previewDark": "design-md/tesla/preview-dark.html",
     "readmePath": "design-md/tesla/README.md",
     "designPath": "design-md/tesla/DESIGN.md",
+    "updatedAt": "2026-04-08",
     "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
     "bestFor": [
       "品牌官网",
@@ -3210,6 +3998,75 @@
       {
         "slug": "bmw",
         "nameZh": "宝马"
+      }
+    ]
+  },
+  {
+    "slug": "theverge",
+    "name": "theverge",
+    "displayName": "The Verge",
+    "nameZh": "The Verge",
+    "group": "reference",
+    "summaryZh": "科技媒体。近黑编辑画布、酸性薄荷与紫色强调、杂志化高密度信息流。",
+    "category": "内容平台",
+    "tagsZh": [
+      "媒体",
+      "科技",
+      "内容",
+      "杂志"
+    ],
+    "styleKeywords": [
+      "近黑画布",
+      "酸性薄荷",
+      "紫色强调",
+      "高密度信息流"
+    ],
+    "aliases": [
+      "theverge",
+      "The Verge",
+      "媒体",
+      "科技",
+      "内容",
+      "杂志"
+    ],
+    "useCases": [
+      "内容社区",
+      "推荐流页面",
+      "活动专题页"
+    ],
+    "previewLight": "design-md/theverge/preview.html",
+    "previewDark": "design-md/theverge/preview-dark.html",
+    "readmePath": "design-md/theverge/README.md",
+    "designPath": "design-md/theverge/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调流动感、内容展示效率和活跃度，适合内容消费和社区产品。",
+    "bestFor": [
+      "内容社区",
+      "推荐流页面",
+      "活动专题页"
+    ],
+    "avoidFor": [
+      "表单密集型后台",
+      "高度理性的文档站"
+    ],
+    "aiChecklist": [
+      "优先突出封面和内容卡片",
+      "降低单屏信息负担",
+      "避免全部模块同质化"
+    ],
+    "recommendedPromptZh": "参考 The Verge / The Verge 的视觉语言，设计一个中文 内容社区，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "pinterest",
+        "nameZh": "Pinterest"
+      },
+      {
+        "slug": "playstation",
+        "nameZh": "PlayStation"
+      },
+      {
+        "slug": "spotify",
+        "nameZh": "Spotify"
       }
     ]
   },
@@ -3247,6 +4104,7 @@
     "previewDark": "design-md/together.ai/preview-dark.html",
     "readmePath": "design-md/together.ai/README.md",
     "designPath": "design-md/together.ai/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -3312,6 +4170,7 @@
     "previewDark": "design-md/uber/preview-dark.html",
     "readmePath": "design-md/uber/README.md",
     "designPath": "design-md/uber/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
     "bestFor": [
       "品牌官网",
@@ -3376,6 +4235,7 @@
     "previewDark": "design-md/vercel/preview-dark.html",
     "readmePath": "design-md/vercel/README.md",
     "designPath": "design-md/vercel/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "重视结构清晰、可读性和文档感，适合开发者和 B 端产品。",
     "bestFor": [
       "开发者官网",
@@ -3404,6 +4264,76 @@
       {
         "slug": "composio",
         "nameZh": "Composio"
+      }
+    ]
+  },
+  {
+    "slug": "vodafone",
+    "name": "vodafone",
+    "displayName": "Vodafone",
+    "nameZh": "沃达丰",
+    "group": "reference",
+    "summaryZh": "全球电信品牌。沃达丰红 CTA、巨大大写标题、影像分段叙事。",
+    "category": "品牌官网",
+    "tagsZh": [
+      "电信",
+      "品牌",
+      "红色",
+      "企业"
+    ],
+    "styleKeywords": [
+      "Vodafone Red",
+      "大写标题",
+      "影像分段",
+      "企业品牌"
+    ],
+    "aliases": [
+      "vodafone",
+      "沃达丰",
+      "Vodafone",
+      "电信",
+      "品牌",
+      "红色",
+      "企业"
+    ],
+    "useCases": [
+      "品牌官网",
+      "营销落地页",
+      "企业介绍页"
+    ],
+    "previewLight": "design-md/vodafone/preview.html",
+    "previewDark": "design-md/vodafone/preview-dark.html",
+    "readmePath": "design-md/vodafone/README.md",
+    "designPath": "design-md/vodafone/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "营销落地页",
+      "企业介绍页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 沃达丰 / Vodafone 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
       }
     ]
   },
@@ -3440,6 +4370,7 @@
     "previewDark": "design-md/voltagent/preview-dark.html",
     "readmePath": "design-md/voltagent/README.md",
     "designPath": "design-md/voltagent/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -3505,6 +4436,7 @@
     "previewDark": "design-md/warp/preview-dark.html",
     "readmePath": "design-md/warp/README.md",
     "designPath": "design-md/warp/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -3570,6 +4502,7 @@
     "previewDark": "design-md/webflow/preview-dark.html",
     "readmePath": "design-md/webflow/README.md",
     "designPath": "design-md/webflow/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调模块化展示和模板感，适合展示产品能力、模板和编辑体验。",
     "bestFor": [
       "产品官网",
@@ -3595,6 +4528,80 @@
       {
         "slug": "sanity",
         "nameZh": "Sanity"
+      },
+      {
+        "slug": "shopify",
+        "nameZh": "Shopify"
+      }
+    ]
+  },
+  {
+    "slug": "wired",
+    "name": "wired",
+    "displayName": "WIRED",
+    "nameZh": "WIRED",
+    "group": "reference",
+    "summaryZh": "科技杂志。纸白编辑版式、黑色字标、窄高衬线标题与高密度文章排版。",
+    "category": "内容平台",
+    "tagsZh": [
+      "媒体",
+      "杂志",
+      "科技",
+      "内容"
+    ],
+    "styleKeywords": [
+      "纸白画布",
+      "编辑版式",
+      "窄高衬线",
+      "高密度排版"
+    ],
+    "aliases": [
+      "wired",
+      "WIRED",
+      "媒体",
+      "杂志",
+      "科技",
+      "内容"
+    ],
+    "useCases": [
+      "内容社区",
+      "推荐流页面",
+      "文章详情页"
+    ],
+    "previewLight": "design-md/wired/preview.html",
+    "previewDark": "design-md/wired/preview-dark.html",
+    "readmePath": "design-md/wired/README.md",
+    "designPath": "design-md/wired/DESIGN.md",
+    "updatedAt": "2026-05-20",
+    "positioningZh": "强调流动感、内容展示效率和活跃度，适合内容消费和社区产品。",
+    "bestFor": [
+      "内容社区",
+      "推荐流页面",
+      "文章详情页",
+      "活动专题页"
+    ],
+    "avoidFor": [
+      "表单密集型后台",
+      "高度理性的文档站"
+    ],
+    "aiChecklist": [
+      "优先突出封面和内容卡片",
+      "降低单屏信息负担",
+      "避免全部模块同质化"
+    ],
+    "recommendedPromptZh": "参考 WIRED / WIRED 的视觉语言，设计一个中文 内容社区，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "pinterest",
+        "nameZh": "Pinterest"
+      },
+      {
+        "slug": "playstation",
+        "nameZh": "PlayStation"
+      },
+      {
+        "slug": "spotify",
+        "nameZh": "Spotify"
       }
     ]
   },
@@ -3631,6 +4638,7 @@
     "previewDark": "design-md/wise/preview-dark.html",
     "readmePath": "design-md/wise/README.md",
     "designPath": "design-md/wise/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调专业、可信和精致的信息表达，适合价格、数据和支付流程较多的页面。",
     "bestFor": [
       "官网落地页",
@@ -3650,16 +4658,16 @@
     "recommendedPromptZh": "参考 Wise / Wise 的视觉语言，设计一个中文 官网落地页，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
     "relatedItems": [
       {
+        "slug": "binance",
+        "nameZh": "币安"
+      },
+      {
         "slug": "coinbase",
         "nameZh": "Coinbase"
       },
       {
         "slug": "kraken",
         "nameZh": "Kraken"
-      },
-      {
-        "slug": "revolut",
-        "nameZh": "Revolut"
       }
     ]
   },
@@ -3697,6 +4705,7 @@
     "previewDark": "design-md/x.ai/preview-dark.html",
     "readmePath": "design-md/x.ai/README.md",
     "designPath": "design-md/x.ai/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调前沿感、速度感和产品未来感，适合把能力和差异点讲清楚。",
     "bestFor": [
       "AI 工具官网",
@@ -3762,6 +4771,7 @@
     "previewDark": "design-md/zapier/preview-dark.html",
     "readmePath": "design-md/zapier/README.md",
     "designPath": "design-md/zapier/DESIGN.md",
+    "updatedAt": "2026-04-07",
     "positioningZh": "强调秩序感、工作流和信息组织，适合 SaaS 和工作台场景。",
     "bestFor": [
       "SaaS 后台",

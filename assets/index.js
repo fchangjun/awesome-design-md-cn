@@ -95,6 +95,11 @@
     return group === "custom" ? "自定义案例" : "参考案例";
   }
 
+  function updateLabel(item) {
+    const value = item.updatedAt || item.syncedAt;
+    return value ? `同步 ${value}` : "未同步";
+  }
+
   function renderCard(item, options = {}) {
     const variant = options.variant || "default";
     const isFeatured = variant === "featured";
@@ -104,7 +109,10 @@
 
     return `
       <article class="${wrapperClass}">
-        <div class="card-kicker">${kicker}</div>
+        <div class="card-topline">
+          <div class="card-kicker">${kicker}</div>
+          <span class="card-updated">${escapeHtml(updateLabel(item))}</span>
+        </div>
         <div class="card-head">
           <div>
             <h3 class="card-title">${escapeHtml(item.nameZh)}</h3>
@@ -113,7 +121,8 @@
           <span class="badge">${escapeHtml(item.category)}</span>
         </div>
         <p class="muted">${escapeHtml(item.summaryZh)}</p>
-        ${isFeatured ? `<div class="mini-tags">${(item.tagsZh || []).slice(0, 2).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : `
+        ${isFeatured ? `
+        <div class="mini-tags">${(item.tagsZh || []).slice(0, 2).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : `
         <div class="card-meta">
           <span>${escapeHtml(groupLabel(item.group))}</span>
           <span>${escapeHtml((item.useCases || []).slice(0, 1).join(""))}</span>

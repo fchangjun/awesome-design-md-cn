@@ -749,6 +749,29 @@ textarea {
   background: rgba(49, 94, 251, 0.36);
 }
 
+.card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card-topline .card-kicker {
+  margin: 0;
+}
+
+.card-updated {
+  display: inline-flex;
+  align-items: center;
+  min-height: 18px;
+  color: rgba(15, 23, 42, 0.46);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
 .card-meta {
   display: grid;
   gap: 6px;
