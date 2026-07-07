@@ -14,7 +14,7 @@
 <div align="center">
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![DESIGN.md Count](https://img.shields.io/badge/DESIGN.md%20count-72-10b981?style=classic)
+![DESIGN.md Count](https://img.shields.io/badge/DESIGN.md%20count-75-10b981?style=classic)
 [![Last Update](https://img.shields.io/github/last-commit/fchangjun/awesome-design-md-cn?label=Last%20update&style=classic)](https://github.com/fchangjun/awesome-design-md-cn)
 
 </div>
@@ -27,7 +27,7 @@
 
 目前仓库包含：
 
-- `71` 个参考案例：来自原项目收录的公开网站风格参考
+- `74` 个参考案例：来自原项目收录的公开网站风格参考
 - `1` 个自定义案例：`awesome-design-md-cn` 自己沉淀出的资源库设计语言
 
 ## 快速入口
@@ -38,6 +38,13 @@
 - 原项目 README：[README.md](https://github.com/VoltAgent/awesome-design-md/blob/main/README.md)
 
 ## 更新日志
+
+### 2026-07-07
+
+- 同步上游新增的 `3` 个参考案例：Dell 1996、HP、Nintendo.com 2001。
+- 为新增案例补齐中文详情页、README 入口、`DESIGN.md` 路径和明暗预览页。
+- 继续按本仓库 preview catalog 规则，为上游未提供预览界面的新增案例生成本地预览页。
+- 更新首页数据版本、收录总数和 README 收录列表；新增案例使用本次同步日期 `2026-07-07`，旧案例保留原有本地日期。
 
 ### 2026-05-20
 
@@ -181,9 +188,12 @@ Markdown 也是 LLM 最擅长读取的格式，所以没有额外解析和配置
 
 - [**Airbnb**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/airbnb/) - 旅行平台。暖珊瑚色点缀，强摄影感，圆润 UI
 - [**Apple**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/apple/) - 消费电子。高级留白，SF Pro，电影感视觉
+- [**Dell 1996**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/dell-1996/) - 1996 年 Dell 官网复古目录风。黑色页面框、彩色丝带卡片、粗重标题和手工 GIF 贴纸感
+- [**HP**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/hp/) - PC 与打印机品牌。纯白画布、HP 电光蓝 CTA、几何无衬线和蓝色斜角装饰
 - [**IBM**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/ibm/) - 企业技术品牌。Carbon 设计系统，结构化蓝色体系
 - [**Meta**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/meta/) - 消费硬件商店。摄影优先、黑白双 CTA、Meta 蓝购买动作
 - [**Nike**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/nike/) - 运动零售品牌。黑白高对比、超大写标题、全幅运动摄影
+- [**Nintendo.com 2001**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/nintendo-2001/) - 复古游戏网页。金属斜面面板、琥珀导航、Y2K 主机外壳式界面
 - [**NVIDIA**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/nvidia/) - GPU 计算。绿色与黑色能量感，技术力量气质
 - [**PlayStation**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/playstation/) - 游戏主机零售与内容平台。蓝色 CTA、三段式明暗画布、游戏视觉主导
 - [**Shopify**](https://github.com/fchangjun/awesome-design-md-cn/tree/main/design-md/shopify/) - 电商平台。深色电影感营销与浅色交易界面并行，绿色商业强调

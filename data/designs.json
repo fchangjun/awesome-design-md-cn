@@ -1077,6 +1077,80 @@
     ]
   },
   {
+    "slug": "dell-1996",
+    "name": "dell-1996",
+    "displayName": "Dell (1996)",
+    "nameZh": "Dell 1996",
+    "group": "reference",
+    "summaryZh": "1996 年 Dell 官网复古目录风。黑色页面框、彩色丝带卡片、粗重标题和手工 GIF 贴纸感。",
+    "category": "品牌官网",
+    "tagsZh": [
+      "复古",
+      "企业",
+      "硬件",
+      "目录页"
+    ],
+    "styleKeywords": [
+      "1996 网页",
+      "黑色框架",
+      "彩色目录卡",
+      "GIF 贴纸"
+    ],
+    "aliases": [
+      "dell-1996",
+      "dell1996",
+      "Dell 1996",
+      "Dell (1996)",
+      "复古",
+      "企业",
+      "硬件",
+      "目录页",
+      "Dell",
+      "戴尔"
+    ],
+    "useCases": [
+      "品牌官网",
+      "营销落地页",
+      "复古活动页"
+    ],
+    "previewLight": "design-md/dell-1996/preview.html",
+    "previewDark": "design-md/dell-1996/preview-dark.html",
+    "readmePath": "design-md/dell-1996/README.md",
+    "designPath": "design-md/dell-1996/DESIGN.md",
+    "updatedAt": "2026-07-07",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "营销落地页",
+      "复古活动页",
+      "企业介绍页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 Dell 1996 / Dell (1996) 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
+      }
+    ]
+  },
+  {
     "slug": "elevenlabs",
     "name": "elevenlabs",
     "displayName": "ElevenLabs",
@@ -1470,6 +1544,76 @@
       {
         "slug": "composio",
         "nameZh": "Composio"
+      }
+    ]
+  },
+  {
+    "slug": "hp",
+    "name": "hp",
+    "displayName": "HP",
+    "nameZh": "HP",
+    "group": "reference",
+    "summaryZh": "PC 与打印机品牌。纯白画布、HP 电光蓝 CTA、几何无衬线和蓝色斜角装饰。",
+    "category": "品牌官网",
+    "tagsZh": [
+      "硬件",
+      "企业",
+      "蓝色",
+      "科技"
+    ],
+    "styleKeywords": [
+      "HP Electric Blue",
+      "纯白画布",
+      "几何无衬线",
+      "蓝色斜角"
+    ],
+    "aliases": [
+      "hp",
+      "HP",
+      "硬件",
+      "企业",
+      "蓝色",
+      "科技"
+    ],
+    "useCases": [
+      "品牌官网",
+      "产品介绍页",
+      "服务入口页"
+    ],
+    "previewLight": "design-md/hp/preview.html",
+    "previewDark": "design-md/hp/preview-dark.html",
+    "readmePath": "design-md/hp/README.md",
+    "designPath": "design-md/hp/DESIGN.md",
+    "updatedAt": "2026-07-07",
+    "positioningZh": "强调品牌气质、节奏和视觉记忆点，更适合营销和叙事表达。",
+    "bestFor": [
+      "品牌官网",
+      "产品介绍页",
+      "服务入口页",
+      "营销落地页"
+    ],
+    "avoidFor": [
+      "复杂运维后台",
+      "高密度列表管理页"
+    ],
+    "aiChecklist": [
+      "强化首屏和大标题表现",
+      "控制信息数量",
+      "让留白和图片承担更多表达"
+    ],
+    "recommendedPromptZh": "参考 HP / HP 的视觉语言，设计一个中文 品牌官网，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "airbnb",
+        "nameZh": "爱彼迎"
+      },
+      {
+        "slug": "apple",
+        "nameZh": "苹果"
+      },
+      {
+        "slug": "bmw",
+        "nameZh": "宝马"
       }
     ]
   },
@@ -2409,6 +2553,80 @@
     ]
   },
   {
+    "slug": "nintendo-2001",
+    "name": "nintendo-2001",
+    "displayName": "Nintendo.com (2001)",
+    "nameZh": "Nintendo 2001",
+    "group": "reference",
+    "summaryZh": "Nintendo.com 2001 复古游戏网页。金属斜面面板、琥珀导航、Y2K 主机外壳式界面。",
+    "category": "内容平台",
+    "tagsZh": [
+      "游戏",
+      "复古",
+      "Y2K",
+      "内容"
+    ],
+    "styleKeywords": [
+      "Y2K",
+      "金属斜面",
+      "琥珀导航",
+      "游戏主机界面"
+    ],
+    "aliases": [
+      "nintendo-2001",
+      "nintendo2001",
+      "Nintendo 2001",
+      "Nintendo.com (2001)",
+      "游戏",
+      "复古",
+      "Y2K",
+      "内容",
+      "Nintendo",
+      "任天堂"
+    ],
+    "useCases": [
+      "内容社区",
+      "活动专题页",
+      "复古品牌页"
+    ],
+    "previewLight": "design-md/nintendo-2001/preview.html",
+    "previewDark": "design-md/nintendo-2001/preview-dark.html",
+    "readmePath": "design-md/nintendo-2001/README.md",
+    "designPath": "design-md/nintendo-2001/DESIGN.md",
+    "updatedAt": "2026-07-07",
+    "positioningZh": "强调流动感、内容展示效率和活跃度，适合内容消费和社区产品。",
+    "bestFor": [
+      "内容社区",
+      "活动专题页",
+      "复古品牌页",
+      "推荐流页面"
+    ],
+    "avoidFor": [
+      "表单密集型后台",
+      "高度理性的文档站"
+    ],
+    "aiChecklist": [
+      "优先突出封面和内容卡片",
+      "降低单屏信息负担",
+      "避免全部模块同质化"
+    ],
+    "recommendedPromptZh": "参考 Nintendo 2001 / Nintendo.com (2001) 的视觉语言，设计一个中文 内容社区，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
+    "relatedItems": [
+      {
+        "slug": "pinterest",
+        "nameZh": "Pinterest"
+      },
+      {
+        "slug": "playstation",
+        "nameZh": "PlayStation"
+      },
+      {
+        "slug": "spotify",
+        "nameZh": "Spotify"
+      }
+    ]
+  },
+  {
     "slug": "notion",
     "name": "notion",
     "displayName": "Notion",
@@ -2726,16 +2944,16 @@
     "recommendedPromptZh": "参考 Pinterest / Pinterest 的视觉语言，设计一个中文 内容社区，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
     "relatedItems": [
       {
+        "slug": "nintendo-2001",
+        "nameZh": "Nintendo 2001"
+      },
+      {
         "slug": "playstation",
         "nameZh": "PlayStation"
       },
       {
         "slug": "spotify",
         "nameZh": "Spotify"
-      },
-      {
-        "slug": "theverge",
-        "nameZh": "The Verge"
       }
     ]
   },
@@ -2796,16 +3014,16 @@
     "recommendedPromptZh": "参考 PlayStation / PlayStation 的视觉语言，设计一个中文 内容社区，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
     "relatedItems": [
       {
+        "slug": "nintendo-2001",
+        "nameZh": "Nintendo 2001"
+      },
+      {
         "slug": "pinterest",
         "nameZh": "Pinterest"
       },
       {
         "slug": "spotify",
         "nameZh": "Spotify"
-      },
-      {
-        "slug": "theverge",
-        "nameZh": "The Verge"
       }
     ]
   },
@@ -3656,16 +3874,16 @@
     "recommendedPromptZh": "参考 Spotify / Spotify 的视觉语言，设计一个中文 内容社区，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
     "relatedItems": [
       {
+        "slug": "nintendo-2001",
+        "nameZh": "Nintendo 2001"
+      },
+      {
         "slug": "pinterest",
         "nameZh": "Pinterest"
       },
       {
         "slug": "playstation",
         "nameZh": "PlayStation"
-      },
-      {
-        "slug": "theverge",
-        "nameZh": "The Verge"
       }
     ]
   },
@@ -4057,16 +4275,16 @@
     "recommendedPromptZh": "参考 The Verge / The Verge 的视觉语言，设计一个中文 内容社区，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
     "relatedItems": [
       {
+        "slug": "nintendo-2001",
+        "nameZh": "Nintendo 2001"
+      },
+      {
         "slug": "pinterest",
         "nameZh": "Pinterest"
       },
       {
         "slug": "playstation",
         "nameZh": "PlayStation"
-      },
-      {
-        "slug": "spotify",
-        "nameZh": "Spotify"
       }
     ]
   },
@@ -4592,16 +4810,16 @@
     "recommendedPromptZh": "参考 WIRED / WIRED 的视觉语言，设计一个中文 内容社区，保留其配色、字重层级、卡片样式和留白节奏，同时把标题长度、正文排版和信息密度调整为适合中文阅读的形式。",
     "relatedItems": [
       {
+        "slug": "nintendo-2001",
+        "nameZh": "Nintendo 2001"
+      },
+      {
         "slug": "pinterest",
         "nameZh": "Pinterest"
       },
       {
         "slug": "playstation",
         "nameZh": "PlayStation"
-      },
-      {
-        "slug": "spotify",
-        "nameZh": "Spotify"
       }
     ]
   },

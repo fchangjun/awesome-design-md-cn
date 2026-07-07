@@ -40,12 +40,14 @@ const nameZhMap = {
   coinbase: "Coinbase",
   composio: "Composio",
   cursor: "Cursor",
+  "dell-1996": "Dell 1996",
   elevenlabs: "ElevenLabs",
   expo: "Expo",
   ferrari: "法拉利",
   figma: "Figma",
   framer: "Framer",
   hashicorp: "HashiCorp",
+  hp: "HP",
   ibm: "IBM",
   intercom: "Intercom",
   kraken: "Kraken",
@@ -60,6 +62,7 @@ const nameZhMap = {
   "mistral.ai": "Mistral",
   mongodb: "MongoDB",
   nike: "Nike",
+  "nintendo-2001": "Nintendo 2001",
   notion: "Notion",
   nvidia: "英伟达",
   ollama: "Ollama",
@@ -114,12 +117,14 @@ const displayNameMap = {
   coinbase: "Coinbase",
   composio: "Composio",
   cursor: "Cursor",
+  "dell-1996": "Dell (1996)",
   elevenlabs: "ElevenLabs",
   expo: "Expo",
   ferrari: "Ferrari",
   figma: "Figma",
   framer: "Framer",
   hashicorp: "HashiCorp",
+  hp: "HP",
   ibm: "IBM",
   intercom: "Intercom",
   kraken: "Kraken",
@@ -134,6 +139,7 @@ const displayNameMap = {
   "mistral.ai": "Mistral AI",
   mongodb: "MongoDB",
   nike: "Nike",
+  "nintendo-2001": "Nintendo.com (2001)",
   notion: "Notion",
   nvidia: "NVIDIA",
   ollama: "Ollama",
@@ -173,6 +179,29 @@ const displayNameMap = {
 };
 
 const recordOverrides = {
+  "dell-1996": {
+    summaryZh: "1996 年 Dell 官网复古目录风。黑色页面框、彩色丝带卡片、粗重标题和手工 GIF 贴纸感。",
+    category: "品牌官网",
+    tagsZh: ["复古", "企业", "硬件", "目录页"],
+    styleKeywords: ["1996 网页", "黑色框架", "彩色目录卡", "GIF 贴纸"],
+    useCases: ["品牌官网", "营销落地页", "复古活动页"],
+    aliases: ["Dell", "戴尔"],
+  },
+  hp: {
+    summaryZh: "PC 与打印机品牌。纯白画布、HP 电光蓝 CTA、几何无衬线和蓝色斜角装饰。",
+    category: "品牌官网",
+    tagsZh: ["硬件", "企业", "蓝色", "科技"],
+    styleKeywords: ["HP Electric Blue", "纯白画布", "几何无衬线", "蓝色斜角"],
+    useCases: ["品牌官网", "产品介绍页", "服务入口页"],
+  },
+  "nintendo-2001": {
+    summaryZh: "Nintendo.com 2001 复古游戏网页。金属斜面面板、琥珀导航、Y2K 主机外壳式界面。",
+    category: "内容平台",
+    tagsZh: ["游戏", "复古", "Y2K", "内容"],
+    styleKeywords: ["Y2K", "金属斜面", "琥珀导航", "游戏主机界面"],
+    useCases: ["内容社区", "活动专题页", "复古品牌页"],
+    aliases: ["Nintendo", "任天堂"],
+  },
   binance: {
     summaryZh: "加密交易平台。黑黄高对比、交易数据紧迫感、深色金融界面。",
     category: "金融科技",
@@ -593,9 +622,9 @@ function renderList(items) {
 }
 
 function renderRelatedLinks(items) {
-  return (items || []).map((item) => `
-    <a class="nav-link" href="../${escapeHtml(item.slug)}/index.html">${escapeHtml(item.nameZh)}</a>
-  `).join("");
+  return (items || [])
+    .map((item) => `<a class="nav-link" href="../${escapeHtml(item.slug)}/index.html">${escapeHtml(item.nameZh)}</a>`)
+    .join("\n");
 }
 
 function detailPageTemplate(record) {
@@ -794,6 +823,10 @@ async function pathExists(filePath) {
     }
     throw error;
   }
+}
+
+function cleanGeneratedText(content) {
+  return String(content).replace(/[ \t]+$/gm, "");
 }
 
 function normalizeHexColor(value) {
@@ -1141,7 +1174,7 @@ async function ensureReadmeFiles(records) {
     await fs.mkdir(path.dirname(readmePath), { recursive: true });
 
     if (!(await pathExists(readmePath))) {
-      await fs.writeFile(readmePath, readmeTemplate(record));
+      await fs.writeFile(readmePath, cleanGeneratedText(readmeTemplate(record)));
     }
   }));
 }
@@ -1167,11 +1200,11 @@ async function ensurePreviewFiles(records) {
     await fs.mkdir(path.dirname(lightPath), { recursive: true });
 
     if (await shouldWritePreview(lightPath)) {
-      await fs.writeFile(lightPath, previewPageTemplate(record, "light", colors));
+      await fs.writeFile(lightPath, cleanGeneratedText(previewPageTemplate(record, "light", colors)));
     }
 
     if (await shouldWritePreview(darkPath)) {
-      await fs.writeFile(darkPath, previewPageTemplate(record, "dark", colors));
+      await fs.writeFile(darkPath, cleanGeneratedText(previewPageTemplate(record, "dark", colors)));
     }
   }));
 }
@@ -1268,7 +1301,7 @@ async function main() {
   await Promise.all(records.map(async (record) => {
     const pageDir = path.join(targetDesignPagesRoot, record.slug);
     await fs.mkdir(pageDir, { recursive: true });
-    await fs.writeFile(path.join(pageDir, "index.html"), detailPageTemplate(record));
+    await fs.writeFile(path.join(pageDir, "index.html"), cleanGeneratedText(detailPageTemplate(record)));
   }));
 
   console.log(`Synced ${records.length} design systems from ${sourceRoot}`);
